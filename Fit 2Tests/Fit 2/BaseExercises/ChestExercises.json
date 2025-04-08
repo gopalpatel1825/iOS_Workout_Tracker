@@ -1,0 +1,296 @@
+[
+    {
+        "name": "Bench Press (Barbell)",
+        "bodyPart": "Chest",
+        "category": "Barbell",
+        "mediaFileName": "",
+        "summary": [
+            "Lie on a flat bench with your feet flat on the floor.",
+            "Grasp the bar a little wider than shoulder width apart.",
+            "Lift the bar off the rack and hold it directly over your chest with arms extended.",
+            "Lower the bar slowly until it lightly touches your lower chest.",
+            "Press the bar back up until your arms are fully extended and elbows locked.",
+            "Return the bar to the rack carefully after your final rep."
+        ]
+    },
+    {
+        "name": "Bench Press (Cable)",
+        "bodyPart": "Chest",
+        "category": "Cable",
+        "mediaFileName": "",
+        "summary": [
+            "Set a flat bench in the center of a cable machine with pulleys positioned low.",
+            "Lie on the bench and grab each handle with a neutral grip.",
+            "Start with your arms extended directly above your chest.",
+            "Lower the handles slowly until your elbows are at about a 90-degree angle.",
+            "Press the handles back up to the starting position, squeezing your chest.",
+            "Control the movement and repeat for your desired number of reps."
+        ]
+    },
+    {
+        "name": "Bench Press (Dumbbell)",
+        "bodyPart": "Chest",
+        "category": "Dumbbell",
+        "mediaFileName": "",
+        "summary": [
+            "Sit on a flat bench with a dumbbell in each hand resting on your thighs.",
+            "Lie back and bring the dumbbells to your chest level with palms facing forward.",
+            "Press the dumbbells up until your arms are fully extended above your chest.",
+            "Lower the dumbbells slowly until your elbows are at a 90-degree angle.",
+            "Press the weights back up while squeezing your chest muscles.",
+            "Lower the dumbbells carefully after your final rep and sit up."
+        ]
+    },
+    {
+        "name": "Bench Press (Smith Machine)",
+        "bodyPart": "Chest",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Position a flat bench under the Smith machine bar and lie down with the bar over your chest.",
+            "Grasp the bar slightly wider than shoulder width.",
+            "Unrack the bar by rotating your wrists and lowering it slowly to your chest.",
+            "Pause briefly when the bar touches your chest.",
+            "Press the bar back up until your arms are fully extended.",
+            "Rotate the bar to lock it back into the Smith machine after your final rep."
+        ]
+    },
+    {
+        "name": "Bench Press - Wide Grip (Barbell)",
+        "bodyPart": "Chest",
+        "category": "Barbell",
+        "mediaFileName": "",
+        "summary": [
+            "Lie on a flat bench with your feet flat on the floor.",
+            "Grasp the bar with a wider-than-usual grip, several inches outside shoulder width.",
+            "Unrack the bar and hold it directly above your chest with arms extended.",
+            "Lower the bar slowly to your chest, keeping control throughout the movement.",
+            "Press the bar back up until your arms are fully extended and elbows locked.",
+            "Carefully rack the bar after your final rep."
+        ]
+    },
+    {
+        "name": "Chest Dip",
+        "bodyPart": "Chest",
+        "category": "Weighted Bodyweight",
+        "mediaFileName": "",
+        "summary": [
+            "Grasp the dip bars and lift your body with arms fully extended.",
+            "Lean your torso slightly forward to target the chest.",
+            "Lower your body slowly by bending your elbows until your upper arms are about parallel to the floor.",
+            "Pause briefly at the bottom of the movement.",
+            "Press back up by straightening your arms and maintaining the forward lean.",
+            "Repeat while maintaining control and proper form."
+        ]
+    },
+    {
+        "name": "Chest Fly (Machine)",
+        "bodyPart": "Chest",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Sit on the machine with your back flat against the pad and feet on the floor.",
+            "Grasp the handles with arms slightly bent and palms facing forward.",
+            "Bring the handles together in a wide arc until they meet in front of your chest.",
+            "Squeeze your chest at the peak of the movement.",
+            "Slowly return the handles to the starting position with control.",
+            "Repeat for your desired number of reps."
+        ]
+    },
+    {
+        "name": "Chest Fly (Cable)",
+        "bodyPart": "Chest",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Set the pulleys to chest height and grab a handle in each hand.",
+            "Stand in the center with one foot slightly forward for balance.",
+            "Extend your arms out to the sides with a slight bend in the elbows.",
+            "Bring the handles together in front of your chest in a wide arc.",
+            "Squeeze your chest at the peak, then slowly return to the starting position.",
+            "Keep your core tight and repeat for reps with controlled motion."
+        ]
+    },
+    {
+        "name": "Chest Fly (Dumbbell)",
+        "bodyPart": "Chest",
+        "category": "Dumbbell",
+        "mediaFileName": "",
+        "summary": [
+            "Lie on a flat bench with a dumbbell in each hand, palms facing each other.",
+            "Extend your arms above your chest with a slight bend in the elbows.",
+            "Lower the dumbbells out to the sides in a wide arc until your chest feels a stretch.",
+            "Keep the bend in your elbows consistent throughout the movement.",
+            "Bring the dumbbells back up over your chest in the same arc.",
+            "Squeeze your chest at the top and repeat."
+        ]
+    },
+    {
+        "name": "Chest Press (Machine)",
+        "bodyPart": "Chest",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Sit on the machine with your back flat against the pad and feet flat on the floor.",
+            "Grasp the handles with your elbows bent at about 90 degrees.",
+            "Press the handles forward until your arms are fully extended.",
+            "Squeeze your chest at the end of the movement.",
+            "Slowly return the handles to the starting position.",
+            "Repeat with controlled reps, keeping your form tight."
+        ]
+    },
+    {
+        "name": "Decline Bench Press (Barbell)",
+        "bodyPart": "Chest",
+        "category": "Barbell",
+        "mediaFileName": "",
+        "summary": [
+            "Lie on a decline bench with your feet secured under the pads.",
+            "Grasp the bar slightly wider than shoulder width.",
+            "Unrack the bar and hold it directly over your lower chest with arms extended.",
+            "Lower the bar slowly until it lightly touches your lower chest.",
+            "Press the bar back up until your arms are fully extended and elbows locked.",
+            "Carefully rack the bar after your final rep."
+        ]
+    },
+    {
+        "name": "Decline Bench Press (Dumbbell)",
+        "bodyPart": "Chest",
+        "category": "Dumbbell",
+        "mediaFileName": "",
+        "summary": [
+            "Lie on a decline bench with your feet secured and a dumbbell in each hand.",
+            "Bring the dumbbells to chest level with palms facing forward.",
+            "Press the dumbbells up until your arms are fully extended above your lower chest.",
+            "Lower the dumbbells slowly in a controlled motion.",
+            "Stop when your elbows are at about a 90-degree angle.",
+            "Press the dumbbells back up and repeat."
+        ]
+    },
+    {
+        "name": "Decline Bench Press (Smith Machine)",
+        "bodyPart": "Chest",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Position a decline bench under the Smith machine and secure your feet.",
+            "Grasp the bar slightly wider than shoulder width.",
+            "Unrack the bar by rotating your wrists and hold it over your lower chest.",
+            "Lower the bar slowly until it touches your lower chest.",
+            "Press the bar back up until your arms are fully extended.",
+            "Rotate the bar to lock it in place after your final rep."
+        ]
+    },
+    {
+        "name": "Incline Bench Press (Barbell)",
+        "bodyPart": "Chest",
+        "category": "Barbell",
+        "mediaFileName": "",
+        "summary": [
+            "Sit on an incline bench with your feet flat on the floor.",
+            "Grasp the bar slightly wider than shoulder width apart.",
+            "Unrack the bar and hold it directly above your upper chest with arms extended.",
+            "Lower the bar slowly until it lightly touches your upper chest.",
+            "Press the bar back up until your arms are fully extended and elbows locked.",
+            "Carefully return the bar to the rack after your final rep."
+        ]
+    },
+    {
+        "name": "Incline Bench Press (Cable)",
+        "bodyPart": "Chest",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Set an incline bench in the center of a cable machine with pulleys set low.",
+            "Sit on the bench and grab a handle in each hand with palms facing forward.",
+            "Start with your hands at chest level and elbows bent.",
+            "Press the handles upward and slightly inward until your arms are fully extended.",
+            "Squeeze your chest at the top of the movement.",
+            "Lower the handles slowly back to the starting position and repeat."
+        ]
+    },
+    {
+        "name": "Incline Bench Press (Dumbbell)",
+        "bodyPart": "Chest",
+        "category": "Dumbbell",
+        "mediaFileName": "",
+        "summary": [
+            "Sit on an incline bench with a dumbbell in each hand resting on your thighs.",
+            "Lie back and bring the dumbbells to chest level with palms facing forward.",
+            "Press the dumbbells up until your arms are fully extended above your chest.",
+            "Lower the dumbbells slowly until your elbows are at about a 90-degree angle.",
+            "Keep your wrists straight and core engaged throughout the movement.",
+            "Press the dumbbells back up and repeat."
+        ]
+    },
+    {
+        "name": "Incline Bench Press (Smith Machine)",
+        "bodyPart": "Chest",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Set an incline bench under the Smith machine and adjust it so the bar is in line with your upper chest.",
+            "Grasp the bar slightly wider than shoulder width.",
+            "Unrack the bar by rotating your wrists and hold it above your chest.",
+            "Lower the bar slowly until it lightly touches your upper chest.",
+            "Press the bar back up until your arms are fully extended.",
+            "Rotate the bar to lock it back in place after your final rep."
+        ]
+    },
+    {
+        "name": "Incline Chest Fly (Dumbbell)",
+        "bodyPart": "Chest",
+        "category": "Dumbbell",
+        "mediaFileName": "",
+        "summary": [
+            "Sit on an incline bench with a dumbbell in each hand and lie back.",
+            "Extend your arms above your chest with a slight bend in the elbows and palms facing each other.",
+            "Lower the dumbbells out to the sides in a wide arc until you feel a stretch in your chest.",
+            "Keep the same bend in your elbows throughout the movement.",
+            "Bring the dumbbells back together over your chest in the same arc.",
+            "Squeeze your chest at the top and repeat."
+        ]
+    },
+    {
+        "name": "Incline Chest Press (Machine)",
+        "bodyPart": "Chest",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Sit on the incline chest press machine with your back flat against the pad.",
+            "Grasp the handles with your elbows bent and aligned with your upper chest.",
+            "Press the handles forward and upward until your arms are fully extended.",
+            "Squeeze your chest muscles at the top of the movement.",
+            "Slowly return to the starting position with control.",
+            "Repeat for your desired number of reps."
+        ]
+    },
+    {
+        "name": "Push-Up",
+        "bodyPart": "Chest",
+        "category": "Reps Only",
+        "mediaFileName": "",
+        "summary": [
+            "Start in a plank position with your hands slightly wider than shoulder width.",
+            "Keep your body in a straight line from head to heels.",
+            "Lower your body by bending your elbows until your chest nearly touches the floor.",
+            "Press through your palms to return to the starting position.",
+            "Keep your core tight and elbows slightly tucked.",
+            "Repeat for your desired number of reps."
+        ]
+    },
+    {
+        "name": "Push-Up",
+        "bodyPart": "Chest",
+        "category": "Weighted Bodyweight",
+        "mediaFileName": "",
+        "summary": [
+            "Start in a plank position with a weight plate or vest secured on your back.",
+            "Keep your hands slightly wider than shoulder width.",
+            "Lower your chest toward the floor by bending your elbows.",
+            "Maintain a straight line from head to heels throughout the movement.",
+            "Press through your palms to return to the starting position.",
+            "Repeat while keeping your core engaged and movement controlled."
+        ]
+    }
+]
