@@ -1,0 +1,22 @@
+PODS:
+  - DGCharts (5.1.0):
+    - DGCharts/Core (= 5.1.0)
+  - DGCharts/Core (5.1.0)
+  - SwiftyGif (5.4.5)
+
+DEPENDENCIES:
+  - DGCharts
+  - SwiftyGif
+
+SPEC REPOS:
+  trunk:
+    - DGCharts
+    - SwiftyGif
+
+SPEC CHECKSUMS:
+  DGCharts: 1c6daf585b6cfc78807af44ea690d357c410627f
+  SwiftyGif: 706c60cf65fa2bc5ee0313beece843c8eb8194d4
+
+PODFILE CHECKSUM: 96162921ee7dbee2a5abcff49c200de7ef8ef2bd
+
+COCOAPODS: 1.16.2

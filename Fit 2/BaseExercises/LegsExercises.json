@@ -1,0 +1,524 @@
+[
+    {
+        "name": "Box Jump",
+        "bodyPart": "Legs",
+        "category": "Other",
+        "mediaFileName": "",
+        "summary": [
+            "Stand in front of a sturdy box or platform with feet shoulder-width apart.",
+            "Bend your knees and swing your arms back to prepare for the jump.",
+            "Explode upward, swinging your arms forward as you jump onto the box.",
+            "Land softly on the box with knees slightly bent and feet flat.",
+            "Step or jump back down to the floor and repeat."
+        ]
+    },
+    {
+        "name": "Box Squat (Barbell)",
+        "bodyPart": "Legs",
+        "category": "Barbell",
+        "mediaFileName": "",
+        "summary": [
+            "Set a box or bench behind you and position a barbell on your upper back.",
+            "Stand with feet shoulder-width apart and toes slightly turned out.",
+            "Lower your hips back and down until you sit briefly on the box.",
+            "Drive through your heels to return to the standing position.",
+            "Repeat while keeping your chest up and back straight."
+        ]
+    },
+    {
+        "name": "Box Squat (Dumbbell)",
+        "bodyPart": "Legs",
+        "category": "Dumbbell",
+        "mediaFileName": "",
+        "summary": [
+            "Hold a dumbbell in each hand at your sides and stand in front of a box.",
+            "Lower yourself back and down until you sit briefly on the box.",
+            "Push through your heels to return to the starting position.",
+            "Keep your chest up and core engaged throughout the movement.",
+            "Repeat for the desired number of reps."
+        ]
+    },
+    {
+        "name": "Bulgarian Split Squat",
+        "bodyPart": "Legs",
+        "category": "Other",
+        "mediaFileName": "",
+        "summary": [
+            "Stand a few feet in front of a bench and place one foot behind you on the bench.",
+            "Keep your front foot flat and your torso upright.",
+            "Lower your back knee toward the ground by bending your front leg.",
+            "Pause when your front thigh is parallel to the ground.",
+            "Push through your front heel to return to the starting position.",
+            "Complete the reps and switch legs."
+        ]
+    },
+    {
+        "name": "Cable Pull Through",
+        "bodyPart": "Legs",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Attach a rope handle to a low pulley and face away from the machine.",
+            "Straddle the rope and grab the handles between your legs.",
+            "Hinge at your hips and lower your torso while keeping your back flat.",
+            "Drive your hips forward and squeeze your glutes at the top.",
+            "Repeat for your desired number of reps."
+        ]
+    },
+    {
+        "name": "Deadlift (Barbell)",
+        "bodyPart": "Legs",
+        "category": "Barbell",
+        "mediaFileName": "",
+        "summary": [
+            "Stand with your feet hip-width apart and the barbell over your midfoot.",
+            "Bend at the hips and knees to grip the bar just outside your knees.",
+            "Keep your back flat and chest up as you pull the bar off the floor.",
+            "Stand up straight by driving through your heels and extending your hips.",
+            "Lower the bar with control back to the floor.",
+            "Repeat for the desired number of reps."
+        ]
+    },
+    {
+        "name": "Deadlift (Dumbbell)",
+        "bodyPart": "Legs",
+        "category": "Dumbbell",
+        "mediaFileName": "",
+        "summary": [
+            "Hold a dumbbell in each hand in front of your thighs with palms facing your body.",
+            "Stand with your feet hip-width apart and knees slightly bent.",
+            "Hinge at the hips and lower the dumbbells down the front of your legs.",
+            "Keep your back flat and chest up throughout the movement.",
+            "Return to standing by driving your hips forward.",
+            "Repeat for reps."
+        ]
+    },
+    {
+        "name": "Deadlift (Smith Machine)",
+        "bodyPart": "Legs",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Stand in front of a Smith machine with the bar at shin level.",
+            "Grip the bar with hands shoulder-width apart.",
+            "Lift the bar by driving through your heels and extending your hips.",
+            "Stand tall, then slowly lower the bar back down with control.",
+            "Repeat the motion while keeping your back flat."
+        ]
+    },
+    {
+        "name": "Front Squat (Barbell)",
+        "bodyPart": "Legs",
+        "category": "Barbell",
+        "mediaFileName": "",
+        "summary": [
+            "Position a barbell on the front of your shoulders with your elbows high.",
+            "Stand with feet shoulder-width apart and toes slightly out.",
+            "Lower into a squat by bending your knees and hips.",
+            "Keep your chest up and elbows high throughout the movement.",
+            "Drive through your heels to return to standing.",
+            "Repeat for the desired number of reps."
+        ]
+    },
+    {
+        "name": "Goblet Squat (Dumbbell)",
+        "bodyPart": "Legs",
+        "category": "Dumbbell",
+        "mediaFileName": "",
+        "summary": [
+            "Hold a dumbbell vertically at chest level with both hands.",
+            "Stand with your feet shoulder-width apart and toes slightly out.",
+            "Lower your body into a squat while keeping the dumbbell close to your chest.",
+            "Go as low as your mobility allows with a flat back.",
+            "Push through your heels to stand back up.",
+            "Repeat with control."
+        ]
+    },
+    {
+        "name": "Hack Squat",
+        "bodyPart": "Legs",
+        "category": "Other",
+        "mediaFileName": "",
+        "summary": [
+            "Position yourself on the hack squat machine with your shoulders under the pads.",
+            "Place your feet on the platform shoulder-width apart.",
+            "Unlock the safety handles and lower your body by bending your knees.",
+            "Stop when your thighs are about parallel to the platform.",
+            "Push through your heels to return to the starting position.",
+            "Repeat for reps."
+        ]
+    },
+    {
+        "name": "Hip Abductor (Machine)",
+        "bodyPart": "Legs",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Sit on the machine and place your outer thighs against the pads.",
+            "Select a comfortable resistance and grip the handles for support.",
+            "Push your legs outward against the pads until fully abducted.",
+            "Pause briefly, then return to the starting position.",
+            "Repeat with control for the desired number of reps."
+        ]
+    },
+    {
+        "name": "Hip Adductor (Machine)",
+        "bodyPart": "Legs",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Sit on the machine and place your inner thighs against the pads.",
+            "Select an appropriate resistance and hold the handles.",
+            "Bring your legs together against the resistance.",
+            "Pause and squeeze your inner thighs at the top.",
+            "Slowly return to the start position.",
+            "Repeat for reps."
+        ]
+    },
+    {
+        "name": "Hip Thrust (Barbell)",
+        "bodyPart": "Legs",
+        "category": "Barbell",
+        "mediaFileName": "",
+        "summary": [
+            "Sit on the ground with your upper back against a bench and a barbell over your hips.",
+            "Roll the bar into position and plant your feet flat on the floor.",
+            "Drive through your heels to lift your hips up until your torso is parallel to the floor.",
+            "Squeeze your glutes at the top of the movement.",
+            "Lower your hips back down with control.",
+            "Repeat for reps."
+        ]
+    },
+    {
+        "name": "Leg Extension (Machine)",
+        "bodyPart": "Legs",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Sit on the leg extension machine with your feet under the padded lever.",
+            "Adjust the pad so it rests just above your ankles.",
+            "Grip the handles and keep your back flat against the seat.",
+            "Extend your legs by contracting your quadriceps.",
+            "Pause at the top, then slowly lower the weight.",
+            "Repeat for your desired number of reps."
+        ]
+    },
+    {
+        "name": "Leg Press",
+        "bodyPart": "Legs",
+        "category": "Other",
+        "mediaFileName": "",
+        "summary": [
+            "Sit on the leg press machine with your feet shoulder-width apart on the platform.",
+            "Unlock the safety handles and lower the platform toward your chest by bending your knees.",
+            "Stop when your knees form about a 90-degree angle.",
+            "Push the platform back up through your heels.",
+            "Repeat with control for the desired reps."
+        ]
+    },
+    {
+        "name": "Lunge (Barbell)",
+        "bodyPart": "Legs",
+        "category": "Barbell",
+        "mediaFileName": "",
+        "summary": [
+            "Place a barbell on your upper back and stand tall with feet hip-width apart.",
+            "Step forward with one leg and lower your back knee toward the ground.",
+            "Keep your chest upright and front knee aligned with your foot.",
+            "Push through the front heel to return to standing.",
+            "Alternate legs and repeat."
+        ]
+    },
+    {
+        "name": "Lunge (Dumbbell)",
+        "bodyPart": "Legs",
+        "category": "Dumbbell",
+        "mediaFileName": "",
+        "summary": [
+            "Hold a dumbbell in each hand at your sides and stand upright.",
+            "Step forward with one leg and lower into a lunge.",
+            "Keep your front knee above your ankle and chest upright.",
+            "Push through your front heel to return to the starting position.",
+            "Repeat alternating legs."
+        ]
+    },
+    {
+        "name": "Lying Leg Curl (Machine)",
+        "bodyPart": "Legs",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Lie face down on the leg curl machine with your ankles under the pad.",
+            "Grip the handles and keep your hips flat against the bench.",
+            "Curl your legs up as far as possible by contracting your hamstrings.",
+            "Pause at the top, then lower the pad with control.",
+            "Repeat for reps."
+        ]
+    },
+    {
+        "name": "Pistol Squat",
+        "bodyPart": "Legs",
+        "category": "Other",
+        "mediaFileName": "",
+        "summary": [
+            "Stand on one leg with the other leg extended in front of you.",
+            "Hold your arms out for balance and keep your chest upright.",
+            "Lower yourself into a squat on the standing leg.",
+            "Go as low as your balance and mobility allow.",
+            "Push through your heel to return to standing.",
+            "Switch legs and repeat."
+        ]
+    },
+    {
+        "name": "Romanian Deadlift (Barbell)",
+        "bodyPart": "Legs",
+        "category": "Barbell",
+        "mediaFileName": "",
+        "summary": [
+            "Stand with your feet hip-width apart holding a barbell in front of your thighs.",
+            "Keep your knees slightly bent and your back flat.",
+            "Hinge at your hips and lower the bar down the front of your legs.",
+            "Go until you feel a stretch in your hamstrings.",
+            "Drive your hips forward to return to standing.",
+            "Repeat with control."
+        ]
+    },
+    {
+        "name": "Romanian Deadlift (Dumbbell)",
+        "bodyPart": "Legs",
+        "category": "Dumbbell",
+        "mediaFileName": "",
+        "summary": [
+            "Hold a dumbbell in each hand in front of your thighs.",
+            "Keep your knees slightly bent and hinge at the hips.",
+            "Lower the dumbbells down the front of your legs while keeping your back flat.",
+            "Stop when you feel a hamstring stretch, then stand back up.",
+            "Repeat for the desired number of reps."
+        ]
+    },
+    {
+        "name": "Seated Calf Raise (Machine)",
+        "bodyPart": "Legs",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Sit at the seated calf raise machine with the pads resting on your thighs.",
+            "Place the balls of your feet on the foot platform.",
+            "Raise your heels by pressing through your toes.",
+            "Pause at the top, then lower your heels below the platform level.",
+            "Repeat with controlled motion."
+        ]
+    },
+    {
+        "name": "Seated Calf Raise (Plate Loaded)",
+        "bodyPart": "Legs",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Sit on the plate-loaded calf raise machine with the weight loaded on the lever.",
+            "Place the balls of your feet on the platform and rest your thighs under the pads.",
+            "Raise your heels by pressing through your toes.",
+            "Pause, then slowly lower your heels down.",
+            "Repeat for your desired number of reps."
+        ]
+    },
+    {
+        "name": "Seated Leg Curl (Machine)",
+        "bodyPart": "Legs",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Sit on the leg curl machine with your ankles behind the padded lever.",
+            "Adjust the backrest and pad to fit your leg length.",
+            "Grip the handles and keep your upper body still.",
+            "Curl your legs back as far as possible.",
+            "Pause and return slowly to the start.",
+            "Repeat for reps."
+        ]
+    },
+    {
+        "name": "Single Leg Calf Raise (Dumbbell)",
+        "bodyPart": "Legs",
+        "category": "Dumbbell",
+        "mediaFileName": "",
+        "summary": [
+            "Hold a dumbbell in one hand and stand on the opposite foot.",
+            "Place the ball of your foot on a raised platform or step.",
+            "Raise your heel as high as possible.",
+            "Pause at the top, then lower your heel below the step.",
+            "Repeat for reps, then switch sides."
+        ]
+    },
+    {
+        "name": "Squat (Barbell)",
+        "bodyPart": "Legs",
+        "category": "Barbell",
+        "mediaFileName": "",
+        "summary": [
+            "Place a barbell on your upper back and stand with feet shoulder-width apart.",
+            "Brace your core and lower your body by bending your hips and knees.",
+            "Go down until your thighs are at least parallel to the floor.",
+            "Push through your heels to return to standing.",
+            "Repeat with control."
+        ]
+    },
+    {
+        "name": "Squat (Dumbbell)",
+        "bodyPart": "Legs",
+        "category": "Dumbbell",
+        "mediaFileName": "",
+        "summary": [
+            "Hold a dumbbell in each hand at your sides or at shoulder height.",
+            "Stand with your feet shoulder-width apart.",
+            "Lower into a squat while keeping your back straight and chest up.",
+            "Push through your heels to return to standing.",
+            "Repeat for your desired number of reps."
+        ]
+    },
+    {
+        "name": "Squat (Bodyweight)",
+        "bodyPart": "Legs",
+        "category": "Bodyweight",
+        "mediaFileName": "",
+        "summary": [
+            "Stand with feet shoulder-width apart and arms extended in front of you.",
+            "Lower your hips by bending your knees while keeping your chest up.",
+            "Go as low as you can comfortably go.",
+            "Push through your heels to return to standing.",
+            "Repeat for reps."
+        ]
+    },
+    {
+        "name": "Squat (Machine)",
+        "bodyPart": "Legs",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Position yourself on the squat machine with shoulders under the pads.",
+            "Place your feet flat on the platform.",
+            "Lower yourself by bending your knees and hips.",
+            "Push through your heels to return to the starting position.",
+            "Repeat while maintaining control."
+        ]
+    },
+    {
+        "name": "Squat (Smith Machine)",
+        "bodyPart": "Legs",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Stand under the bar of a Smith machine with your feet shoulder-width apart.",
+            "Unrack the bar and lower into a squat while keeping your back straight.",
+            "Stop when your thighs are parallel to the ground.",
+            "Push through your heels to return to standing.",
+            "Repeat for reps."
+        ]
+    },
+    {
+        "name": "Standing Calf Raise (Barbell)",
+        "bodyPart": "Legs",
+        "category": "Barbell",
+        "mediaFileName": "",
+        "summary": [
+            "Place a barbell on your upper back and stand on the edge of a step.",
+            "Let your heels hang off the edge and keep your legs straight.",
+            "Raise your heels as high as possible by contracting your calves.",
+            "Pause at the top, then lower your heels below the step.",
+            "Repeat with control."
+        ]
+    },
+    {
+        "name": "Standing Calf Raise (Dumbbell)",
+        "bodyPart": "Legs",
+        "category": "Dumbbell",
+        "mediaFileName": "",
+        "summary": [
+            "Hold a dumbbell in one or both hands and stand with the balls of your feet on a step.",
+            "Let your heels hang off the edge.",
+            "Raise your heels as high as you can.",
+            "Pause, then lower your heels below the platform.",
+            "Repeat for reps."
+        ]
+    },
+    {
+        "name": "Standing Calf Raise (Machine)",
+        "bodyPart": "Legs",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Step into the standing calf raise machine with the pads on your shoulders.",
+            "Place the balls of your feet on the platform and let your heels hang.",
+            "Raise your heels by pressing through your toes.",
+            "Pause at the top, then lower with control.",
+            "Repeat for your desired number of reps."
+        ]
+    },
+    {
+        "name": "Standing Calf Raise (Smith Machine)",
+        "bodyPart": "Legs",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Stand under the bar of a Smith machine with your shoulders supporting it.",
+            "Place the balls of your feet on a raised surface.",
+            "Raise your heels by extending your ankles.",
+            "Pause at the top, then lower your heels down.",
+            "Repeat for reps."
+        ]
+    },
+    {
+        "name": "Stiff Leg Deadlift (Barbell)",
+        "bodyPart": "Legs",
+        "category": "Barbell",
+        "mediaFileName": "",
+        "summary": [
+            "Stand with your feet hip-width apart and hold a barbell in front of your thighs.",
+            "Keep your knees straight or slightly bent.",
+            "Hinge at the hips and lower the bar down your legs while keeping your back flat.",
+            "Stop when you feel a stretch in your hamstrings.",
+            "Return to the top by driving your hips forward.",
+            "Repeat."
+        ]
+    },
+    {
+        "name": "Stiff Leg Deadlift (Dumbbell)",
+        "bodyPart": "Legs",
+        "category": "Dumbbell",
+        "mediaFileName": "",
+        "summary": [
+            "Hold a dumbbell in each hand in front of your thighs.",
+            "Keep your legs straight or slightly bent and your back flat.",
+            "Hinge at the hips and lower the dumbbells down the front of your legs.",
+            "Stop when your hamstrings are fully stretched.",
+            "Drive your hips forward to return to standing.",
+            "Repeat with control."
+        ]
+    },
+    {
+        "name": "Trap Bar Deadlift",
+        "bodyPart": "Legs",
+        "category": "Other",
+        "mediaFileName": "",
+        "summary": [
+            "Step inside a trap bar and grip the handles on both sides.",
+            "Stand with feet hip-width apart and back flat.",
+            "Drive through your heels to lift the bar by extending your hips and knees.",
+            "Stand tall at the top, then lower the bar back down.",
+            "Repeat while maintaining good form."
+        ]
+    },
+    {
+        "name": "Zercher Squat (Barbell)",
+        "bodyPart": "Legs",
+        "category": "Barbell",
+        "mediaFileName": "",
+        "summary": [
+            "Hold a barbell in the crook of your elbows and stand with feet shoulder-width apart.",
+            "Keep your elbows tight to your body and chest up.",
+            "Lower into a squat by bending your knees and hips.",
+            "Go down until your thighs are at least parallel to the ground.",
+            "Push through your heels to return to standing.",
+            "Repeat with control."
+        ]
+    }
+]
