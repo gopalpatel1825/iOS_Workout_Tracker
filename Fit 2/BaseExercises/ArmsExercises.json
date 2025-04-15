@@ -1,0 +1,366 @@
+[
+    {
+        "name": "Bench Press - Close Grip (Barbell)",
+        "bodyPart": "Arms",
+        "category": "Barbell",
+        "mediaFileName": "",
+        "summary": [
+            "Lie on a flat bench with your feet flat on the floor.",
+            "Grasp the bar with a close grip, hands about shoulder-width apart.",
+            "Lift the bar off the rack and hold it above your chest with arms extended.",
+            "Lower the bar slowly to the middle of your chest, keeping your elbows close to your body.",
+            "Press the bar back up until your arms are fully extended.",
+            "Return the bar to the rack carefully after your final rep."
+        ]
+    },
+    {
+        "name": "Bicep Cable Curl Rope",
+        "bodyPart": "Arms",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Attach a rope handle to a low pulley on a cable machine.",
+            "Grab the rope with both hands, palms facing each other.",
+            "Stand upright with your elbows close to your torso.",
+            "Curl the rope toward your shoulders by contracting your biceps.",
+            "Squeeze at the top, then slowly lower the rope back to the starting position.",
+            "Repeat with controlled movement."
+        ]
+    },
+    {
+        "name": "Bicep Curl (Barbell)",
+        "bodyPart": "Arms",
+        "category": "Barbell",
+        "mediaFileName": "",
+        "summary": [
+            "Stand upright holding a barbell with an underhand grip, hands about shoulder-width apart.",
+            "Keep your elbows close to your torso and your core engaged.",
+            "Curl the barbell up by contracting your biceps, keeping your upper arms stationary.",
+            "Lift the bar until it reaches shoulder level and squeeze your biceps at the top.",
+            "Lower the barbell back down slowly with control.",
+            "Repeat for your desired number of reps."
+        ]
+    },
+    {
+        "name": "Bicep Curl (Cable)",
+        "bodyPart": "Arms",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Attach a straight bar to a low pulley cable.",
+            "Stand upright with your feet shoulder-width apart and grab the bar with an underhand grip.",
+            "Keep your elbows close to your sides and your chest up.",
+            "Curl the bar toward your shoulders by contracting your biceps.",
+            "Pause briefly at the top, then lower the bar with control.",
+            "Repeat the motion for your desired number of reps."
+        ]
+    },
+    {
+        "name": "Bicep Curl (Dumbbell)",
+        "bodyPart": "Arms",
+        "category": "Dumbbell",
+        "mediaFileName": "",
+        "summary": [
+            "Stand with a dumbbell in each hand, arms fully extended and palms facing forward.",
+            "Keep your elbows close to your torso and engage your core.",
+            "Curl the dumbbells toward your shoulders by bending your elbows.",
+            "Squeeze your biceps at the top of the movement.",
+            "Lower the dumbbells back down with control.",
+            "Repeat for the desired number of reps."
+        ]
+    },
+    {
+        "name": "Bicep Curl (Machine)",
+        "bodyPart": "Arms",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Sit down and adjust the seat and arm pad so your upper arms are supported.",
+            "Grasp the handles with an underhand grip and arms fully extended.",
+            "Curl the handles toward your shoulders by bending your elbows.",
+            "Squeeze your biceps at the top of the movement.",
+            "Lower the handles back to the starting position with control.",
+            "Repeat for your desired number of reps."
+        ]
+    },
+    {
+        "name": "Cable Triceps Kickback",
+        "bodyPart": "Arms",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Attach a single handle to a low pulley on a cable machine.",
+            "Hold the handle in one hand and hinge at the hips with your back flat.",
+            "Keep your upper arm in line with your torso and elbow bent at 90 degrees.",
+            "Extend your arm back by straightening your elbow.",
+            "Squeeze your triceps at the top, then return to the starting position.",
+            "Repeat and switch arms as needed."
+        ]
+    },
+    {
+        "name": "Concentration Curl (Dumbbell)",
+        "bodyPart": "Arms",
+        "category": "Dumbbell",
+        "mediaFileName": "",
+        "summary": [
+            "Sit on a bench and hold a dumbbell in one hand.",
+            "Rest your elbow on the inside of your thigh, letting the dumbbell hang.",
+            "Curl the dumbbell toward your shoulder, keeping your upper arm stationary.",
+            "Squeeze your bicep at the top of the movement.",
+            "Lower the dumbbell with control back to the starting position.",
+            "Repeat for reps, then switch arms."
+        ]
+    },
+    {
+        "name": "Hammer Curl (Cable)",
+        "bodyPart": "Arms",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Attach a rope to a low pulley and grab it with both hands, palms facing each other.",
+            "Stand upright with elbows close to your torso.",
+            "Curl the rope up while keeping your palms facing each other.",
+            "Pause at the top and squeeze your biceps.",
+            "Lower the rope slowly back to the starting position.",
+            "Repeat for your desired number of reps."
+        ]
+    },
+    {
+        "name": "Hammer Curl (Dumbbell)",
+        "bodyPart": "Arms",
+        "category": "Dumbbell",
+        "mediaFileName": "",
+        "summary": [
+            "Stand with a dumbbell in each hand, palms facing your sides.",
+            "Keep your elbows close to your torso.",
+            "Curl the dumbbells while maintaining the neutral grip.",
+            "Squeeze your biceps at the top of the movement.",
+            "Lower the dumbbells back to the starting position with control.",
+            "Repeat for the desired number of reps."
+        ]
+    },
+    {
+        "name": "Incline Curl (Dumbbell)",
+        "bodyPart": "Arms",
+        "category": "Dumbbell",
+        "mediaFileName": "",
+        "summary": [
+            "Sit on an incline bench with a dumbbell in each hand, arms hanging straight down.",
+            "Keep your palms facing forward and elbows close to your body.",
+            "Curl the dumbbells toward your shoulders, keeping your upper arms still.",
+            "Squeeze your biceps at the top of the movement.",
+            "Lower the dumbbells slowly back to the starting position.",
+            "Repeat for your desired number of reps."
+        ]
+    },
+    {
+        "name": "Preacher Curl (Barbell)",
+        "bodyPart": "Arms",
+        "category": "Barbell",
+        "mediaFileName": "",
+        "summary": [
+            "Sit at a preacher curl bench and grasp a barbell with an underhand grip.",
+            "Rest your upper arms on the pad and extend your arms fully.",
+            "Curl the barbell up by contracting your biceps.",
+            "Pause at the top and squeeze your biceps.",
+            "Lower the bar back down with control.",
+            "Repeat for reps while keeping your arms on the pad."
+        ]
+    },
+    {
+        "name": "Preacher Curl (Dumbbell)",
+        "bodyPart": "Arms",
+        "category": "Dumbbell",
+        "mediaFileName": "",
+        "summary": [
+            "Sit at a preacher bench with a dumbbell in one hand.",
+            "Rest your upper arm on the pad and let the dumbbell hang.",
+            "Curl the dumbbell toward your shoulder while keeping your upper arm stationary.",
+            "Pause and squeeze your bicep at the top.",
+            "Lower the dumbbell back with control.",
+            "Repeat for reps, then switch arms."
+        ]
+    },
+    {
+        "name": "Preacher Curl (Machine)",
+        "bodyPart": "Arms",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Sit on the preacher curl machine with your upper arms resting on the pad.",
+            "Grasp the handles with an underhand grip.",
+            "Curl the handles toward your shoulders, squeezing your biceps.",
+            "Pause at the top of the movement.",
+            "Slowly lower the handles back to the starting position.",
+            "Repeat with control for your desired number of reps."
+        ]
+    },
+    {
+        "name": "Reverse Curl (Barbell)",
+        "bodyPart": "Arms",
+        "category": "Barbell",
+        "mediaFileName": "",
+        "summary": [
+            "Stand holding a barbell with an overhand grip, hands shoulder-width apart.",
+            "Keep your elbows close to your torso and your core tight.",
+            "Curl the barbell up while keeping your palms facing down.",
+            "Squeeze your forearms and biceps at the top.",
+            "Lower the bar slowly with control.",
+            "Repeat for your desired number of reps."
+        ]
+    },
+    {
+        "name": "Reverse Curl (Dumbbell)",
+        "bodyPart": "Arms",
+        "category": "Dumbbell",
+        "mediaFileName": "",
+        "summary": [
+            "Stand holding a dumbbell in each hand with an overhand grip.",
+            "Keep your elbows tucked in and arms extended.",
+            "Curl the dumbbells toward your shoulders, palms still facing down.",
+            "Pause at the top, then slowly lower the weights.",
+            "Keep the motion controlled throughout.",
+            "Repeat for reps."
+        ]
+    },
+    {
+        "name": "Skullcrusher (Barbell)",
+        "bodyPart": "Arms",
+        "category": "Barbell",
+        "mediaFileName": "",
+        "summary": [
+            "Lie on a flat bench holding a barbell with a narrow overhand grip.",
+            "Extend your arms so the bar is over your chest.",
+            "Lower the bar toward your forehead by bending your elbows.",
+            "Stop just before the bar touches your head.",
+            "Press the bar back up to the starting position.",
+            "Repeat with control for the desired reps."
+        ]
+    },
+    {
+        "name": "Skullcrusher (Dumbbell)",
+        "bodyPart": "Arms",
+        "category": "Dumbbell",
+        "mediaFileName": "",
+        "summary": [
+            "Lie on a flat bench with a dumbbell in each hand, arms extended overhead.",
+            "Bend your elbows to lower the dumbbells toward your head.",
+            "Stop just short of your forehead or ears.",
+            "Extend your arms to return to the start.",
+            "Keep your upper arms stationary throughout.",
+            "Repeat for your desired number of reps."
+        ]
+    },
+    {
+        "name": "Triceps Dip",
+        "bodyPart": "Arms",
+        "category": "Weighted Bodyweight",
+        "mediaFileName": "",
+        "summary": [
+            "Position yourself between parallel bars and hold your body up with straight arms.",
+            "Lean slightly forward to emphasize the triceps.",
+            "Lower your body by bending your elbows until your arms form about a 90-degree angle.",
+            "Push through your palms to lift back up.",
+            "Keep your elbows tucked in throughout the motion.",
+            "Repeat while maintaining control."
+        ]
+    },
+    {
+        "name": "Triceps Dip (Assisted)",
+        "bodyPart": "Arms",
+        "category": "Assisted Bodyweight",
+        "mediaFileName": "",
+        "summary": [
+            "Set up an assisted dip machine or use a band for support.",
+            "Hold onto the handles and position your knees on the pad or band.",
+            "Lower yourself by bending your elbows until your upper arms are parallel to the floor.",
+            "Push yourself back up to the starting position.",
+            "Keep your torso slightly leaned forward.",
+            "Repeat with control."
+        ]
+    },
+    {
+        "name": "Triceps Extension (Cable)",
+        "bodyPart": "Arms",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Attach a straight or rope handle to a high pulley.",
+            "Grab the handle with both hands and step back slightly.",
+            "Keep your elbows close to your head and arms bent.",
+            "Extend your arms forward or downward to straighten them.",
+            "Squeeze your triceps at full extension.",
+            "Return to the starting position and repeat."
+        ]
+    },
+    {
+        "name": "Triceps Extension (Barbell)",
+        "bodyPart": "Arms",
+        "category": "Barbell",
+        "mediaFileName": "",
+        "summary": [
+            "Hold a barbell with both hands and raise it overhead with arms extended.",
+            "Keep your elbows pointing forward and close to your head.",
+            "Lower the barbell behind your head by bending your elbows.",
+            "Pause briefly, then press the barbell back up.",
+            "Avoid flaring your elbows during the movement.",
+            "Repeat for the desired number of reps."
+        ]
+    },
+    {
+        "name": "Triceps Extension (Dumbbell)",
+        "bodyPart": "Arms",
+        "category": "Dumbbell",
+        "mediaFileName": "",
+        "summary": [
+            "Hold a single dumbbell with both hands and raise it overhead.",
+            "Keep your elbows close to your ears and your core tight.",
+            "Lower the dumbbell behind your head by bending your elbows.",
+            "Pause, then press the dumbbell back up until your arms are straight.",
+            "Repeat while maintaining good form.",
+            "Keep your upper arms stationary throughout."
+        ]
+    },
+    {
+        "name": "Triceps Extension (Machine)",
+        "bodyPart": "Arms",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Sit at the triceps extension machine and adjust the seat and pad.",
+            "Grab the handles with your arms bent and elbows aligned with the pivot point.",
+            "Push the handles down until your arms are fully extended.",
+            "Squeeze your triceps at the bottom of the movement.",
+            "Slowly return to the starting position.",
+            "Repeat with control."
+        ]
+    },
+    {
+        "name": "Triceps Pushdown (Cable)",
+        "bodyPart": "Arms",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Attach a straight bar or rope to a high pulley.",
+            "Stand upright and grab the handle with an overhand grip.",
+            "Keep your elbows close to your torso and forearms parallel to the floor.",
+            "Push the handle down until your arms are fully extended.",
+            "Squeeze your triceps at the bottom.",
+            "Return to the start with control and repeat."
+        ]
+    },
+    {
+        "name": "Wrist Roller",
+        "bodyPart": "Arms",
+        "category": "Other",
+        "mediaFileName": "",
+        "summary": [
+            "Hold the wrist roller with both hands at shoulder height.",
+            "Slowly rotate your wrists to wind the weight upward.",
+            "Keep your arms extended and wrists steady.",
+            "Unroll the rope slowly to lower the weight back down.",
+            "Maintain control during both directions.",
+            "Repeat for multiple sets as needed."
+        ]
+    }
+]

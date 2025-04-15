@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TemplateEditorBottomCell" id="gTV-IL-0wX" customClass="TemplateEditorBottomCell" customModule="Fit_2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="387" height="177"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="387" height="177"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IYS-jK-hDU">
+                        <rect key="frame" x="0.0" y="0.0" width="387" height="177"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UoZ-b2-LST">
+                                <rect key="frame" x="8" y="8" width="371" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="rWr-Qy-NyY"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" image="plus" catalog="system" title=" Add Exercise"/>
+                                <connections>
+                                    <action selector="addExercisePressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Oem-UQ-OOj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="UoZ-b2-LST" secondAttribute="trailing" constant="8" id="47C-FQ-Ic5"/>
+                            <constraint firstItem="UoZ-b2-LST" firstAttribute="top" secondItem="IYS-jK-hDU" secondAttribute="top" constant="8" id="kId-Zx-dAN"/>
+                            <constraint firstItem="UoZ-b2-LST" firstAttribute="leading" secondItem="IYS-jK-hDU" secondAttribute="leading" constant="8" id="ydR-su-RoQ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="IYS-jK-hDU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Cu0-V1-75u"/>
+                <constraint firstAttribute="bottom" secondItem="IYS-jK-hDU" secondAttribute="bottom" id="YcZ-wT-cze"/>
+                <constraint firstAttribute="trailing" secondItem="IYS-jK-hDU" secondAttribute="trailing" id="e3h-tO-cOc"/>
+                <constraint firstItem="IYS-jK-hDU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="p3s-4W-Q4B"/>
+            </constraints>
+            <size key="customSize" width="387" height="177"/>
+            <connections>
+                <outlet property="addExerciseButton" destination="UoZ-b2-LST" id="Siq-fN-Fzu"/>
+            </connections>
+            <point key="canvasLocation" x="342.74809160305341" y="64.436619718309856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

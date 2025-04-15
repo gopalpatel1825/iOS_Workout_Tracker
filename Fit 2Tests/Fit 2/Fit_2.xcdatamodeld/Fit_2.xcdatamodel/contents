@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23788" systemVersion="24D70" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Exercise" representedClassName="Exercise" syncable="YES" codeGenerationType="category">
+        <attribute name="bodyPart" optional="YES" attributeType="String"/>
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="mediaFileName" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="summary" optional="YES" attributeType="String" defaultValueString="No description for this exercise yet"/>
+        <relationship name="maxVolumePRs" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Set" inverseName="volumePRExercise" inverseEntity="Set"/>
+        <relationship name="maxWeightPRs" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Set" inverseName="maxWeightPRExercise" inverseEntity="Set"/>
+        <relationship name="oneRepMaxPRs" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Set" inverseName="oneRepMaxPRExercise" inverseEntity="Set"/>
+        <relationship name="steps" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Step" inverseName="exercise" inverseEntity="Step"/>
+        <relationship name="workoutExercises" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="WorkoutExercise" inverseName="exercise" inverseEntity="WorkoutExercise"/>
+        <relationship name="workouts" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Workout" inverseName="baseExercises" inverseEntity="Workout"/>
+    </entity>
+    <entity name="Folder" representedClassName="Folder" syncable="YES" codeGenerationType="class">
+        <attribute name="collapsed" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="templates" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Template" inverseName="folder" inverseEntity="Template"/>
+    </entity>
+    <entity name="Set" representedClassName="Set" syncable="YES" codeGenerationType="category">
+        <attribute name="completed" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="index" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="oneRepMax" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="reps" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="volume" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="exercise" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WorkoutExercise" inverseName="sets" inverseEntity="WorkoutExercise"/>
+        <relationship name="maxWeightPRExercise" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Exercise" inverseName="maxWeightPRs" inverseEntity="Exercise"/>
+        <relationship name="oneRepMaxPRExercise" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Exercise" inverseName="oneRepMaxPRs" inverseEntity="Exercise"/>
+        <relationship name="volumePRExercise" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Exercise" inverseName="maxVolumePRs" inverseEntity="Exercise"/>
+    </entity>
+    <entity name="Step" representedClassName=".Step" syncable="YES" codeGenerationType="class">
+        <attribute name="details" optional="YES" attributeType="String"/>
+        <relationship name="exercise" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Exercise" inverseName="steps" inverseEntity="Exercise"/>
+    </entity>
+    <entity name="Template" representedClassName="Template" syncable="YES" codeGenerationType="category">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="exercises" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="WorkoutExercise" inverseName="template" inverseEntity="WorkoutExercise"/>
+        <relationship name="folder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Folder" inverseName="templates" inverseEntity="Folder"/>
+        <relationship name="workouts" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Workout" inverseName="template" inverseEntity="Workout"/>
+    </entity>
+    <entity name="Workout" representedClassName="Workout" syncable="YES" codeGenerationType="category">
+        <attribute name="duration" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="endDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="numSets" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="totalVolume" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="baseExercises" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Exercise" inverseName="workouts" inverseEntity="Exercise"/>
+        <relationship name="exercises" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="WorkoutExercise" inverseName="workout" inverseEntity="WorkoutExercise"/>
+        <relationship name="template" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Template" inverseName="workouts" inverseEntity="Template"/>
+    </entity>
+    <entity name="WorkoutExercise" representedClassName="WorkoutExercise" syncable="YES" codeGenerationType="category">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="totalVolume" optional="YES" attributeType="Float" usesScalarValueType="YES"/>
+        <relationship name="exercise" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Exercise" inverseName="workoutExercises" inverseEntity="Exercise"/>
+        <relationship name="sets" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Set" inverseName="exercise" inverseEntity="Set"/>
+        <relationship name="template" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Template" inverseName="exercises" inverseEntity="Template"/>
+        <relationship name="workout" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Workout" inverseName="exercises" inverseEntity="Workout"/>
+    </entity>
+</model>

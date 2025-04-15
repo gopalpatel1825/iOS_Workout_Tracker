@@ -1,0 +1,310 @@
+[
+    {
+        "name": "Bent Over Single Arm Row (Dumbbell)",
+        "bodyPart": "Back",
+        "category": "Dumbbell",
+        "mediaFileName": "",
+        "summary": [
+            "Place one knee and one hand on a bench for support, holding a dumbbell in your other hand.",
+            "Keep your back flat and your core engaged.",
+            "Let the dumbbell hang straight down from your shoulder.",
+            "Pull the dumbbell up toward your waist by bending your elbow.",
+            "Squeeze your back at the top, then lower the dumbbell slowly.",
+            "Complete your reps, then switch sides."
+        ]
+    },
+    {
+        "name": "Bent Over Row (Barbell)",
+        "bodyPart": "Back",
+        "category": "Barbell",
+        "mediaFileName": "",
+        "summary": [
+            "Stand with your feet shoulder-width apart and grip the barbell with both hands.",
+            "Hinge at the hips and bend your knees slightly, keeping your back flat.",
+            "Let the bar hang at arm\u2019s length below your chest.",
+            "Pull the barbell toward your lower ribcage by bending your elbows.",
+            "Squeeze your shoulder blades together at the top.",
+            "Lower the bar back down with control and repeat."
+        ]
+    },
+    {
+        "name": "Bent Over Row (Dumbbell)",
+        "bodyPart": "Back",
+        "category": "Dumbbell",
+        "mediaFileName": "",
+        "summary": [
+            "Stand with a dumbbell in each hand, palms facing your body.",
+            "Hinge at the hips and bend your knees slightly, keeping your back flat.",
+            "Let the dumbbells hang at arm\u2019s length below your chest.",
+            "Pull the dumbbells toward your waist by bending your elbows.",
+            "Squeeze your shoulder blades together at the top.",
+            "Lower the weights back down with control and repeat."
+        ]
+    },
+    {
+        "name": "Chin-Up",
+        "bodyPart": "Back",
+        "category": "Reps Only",
+        "mediaFileName": "",
+        "summary": [
+            "Grab the pull-up bar with an underhand grip, hands shoulder-width apart.",
+            "Hang with your arms fully extended and legs crossed behind you.",
+            "Pull your chest up toward the bar by bending your elbows.",
+            "Squeeze your back and biceps at the top.",
+            "Lower yourself back down with control until your arms are fully extended.",
+            "Repeat for your desired number of reps."
+        ]
+    },
+    {
+        "name": "Chin-Up (Assisted)",
+        "bodyPart": "Back",
+        "category": "Assisted Bodyweight",
+        "mediaFileName": "",
+        "summary": [
+            "Set up an assisted pull-up machine or loop a resistance band around the bar.",
+            "Grab the bar with an underhand grip, hands shoulder-width apart.",
+            "Step onto the platform or place your knees in the band.",
+            "Pull your chest up toward the bar by bending your elbows.",
+            "Squeeze your back and biceps at the top of the movement.",
+            "Lower yourself down slowly until your arms are fully extended, then repeat."
+        ]
+    },
+    {
+        "name": "Chin-Up (Weighted)",
+        "bodyPart": "Back",
+        "category": "Weighted Bodyweight",
+        "mediaFileName": "",
+        "summary": [
+            "Attach a weight belt or wear a weighted vest for added resistance.",
+            "Grab the pull-up bar with an underhand grip, hands shoulder-width apart.",
+            "Hang with your arms fully extended and core engaged.",
+            "Pull your chest up toward the bar by bending your elbows.",
+            "Squeeze your back and biceps at the top of the movement.",
+            "Lower yourself back down with control and repeat."
+        ]
+    },
+    {
+        "name": "Incline Row (Dumbbell)",
+        "bodyPart": "Back",
+        "category": "Dumbbell",
+        "mediaFileName": "",
+        "summary": [
+            "Set an incline bench to about 45 degrees and lie face down with a dumbbell in each hand.",
+            "Let your arms hang straight down with palms facing each other.",
+            "Pull the dumbbells up toward your sides by bending your elbows.",
+            "Squeeze your shoulder blades together at the top of the movement.",
+            "Lower the dumbbells back to the starting position with control.",
+            "Repeat while keeping your chest on the bench and core engaged."
+        ]
+    },
+    {
+        "name": "Inverted Row",
+        "bodyPart": "Back",
+        "category": "Bodyweight",
+        "mediaFileName": "",
+        "summary": [
+            "Lie underneath a bar set at waist height and grab it with an overhand grip, hands shoulder-width apart.",
+            "Extend your legs and keep your body in a straight line.",
+            "Pull your chest toward the bar by bending your elbows and squeezing your shoulder blades.",
+            "Pause briefly at the top of the movement.",
+            "Lower yourself back down with control until your arms are fully extended.",
+            "Repeat while keeping your core tight and body aligned."
+        ]
+    },
+    {
+        "name": "Iso-Lateral Row (Machine)",
+        "bodyPart": "Back",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Sit on the machine and place your chest firmly against the pad.",
+            "Grab the handles with a neutral grip, arms extended.",
+            "Pull one or both handles toward your sides by bending your elbows.",
+            "Squeeze your shoulder blades together at the peak of the movement.",
+            "Slowly return the handles to the starting position with control.",
+            "Repeat for your desired number of reps, alternating arms if desired."
+        ]
+    },
+    {
+        "name": "Lat Pulldown (Cable)",
+        "bodyPart": "Back",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Sit at the lat pulldown machine and adjust the thigh pad to keep your legs secure.",
+            "Grab the bar with a wide overhand grip.",
+            "Pull the bar down toward your upper chest while keeping your torso upright.",
+            "Squeeze your shoulder blades together at the bottom of the movement.",
+            "Slowly return the bar to the starting position with control.",
+            "Repeat while avoiding any swinging or leaning back."
+        ]
+    },
+    {
+        "name": "Lat Pulldown (Machine)",
+        "bodyPart": "Back",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Sit at the lat pulldown machine and adjust the thigh pad to lock your legs in place.",
+            "Grab the handles with a wide grip, palms facing forward.",
+            "Pull the handles down toward your upper chest while keeping your back straight.",
+            "Squeeze your shoulder blades together at the bottom of the movement.",
+            "Slowly let the handles return to the starting position with control.",
+            "Repeat while maintaining proper form throughout the set."
+        ]
+    },
+    {
+        "name": "Lat Pulldown Single Arm (Cable)",
+        "bodyPart": "Back",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Sit at a cable lat pulldown station with a single handle attached to the pulley.",
+            "Grab the handle with one hand and sit upright with your core engaged.",
+            "Pull the handle down toward your shoulder by bending your elbow.",
+            "Squeeze your back at the bottom of the movement.",
+            "Slowly return the handle to the starting position with control.",
+            "Complete your reps, then switch arms and repeat."
+        ]
+    },
+    {
+        "name": "Lat Pulldown Wide Grip (Cable)",
+        "bodyPart": "Back",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Sit at the cable lat pulldown machine and secure your legs under the thigh pad.",
+            "Grab the wide bar with an overhand grip, hands placed wider than shoulder width.",
+            "Pull the bar down toward your upper chest while keeping your torso upright.",
+            "Squeeze your shoulder blades together at the bottom of the movement.",
+            "Slowly return the bar to the top with control.",
+            "Repeat for your desired number of reps while keeping proper form."
+        ]
+    },
+    {
+        "name": "Pendlay Row (Barbell)",
+        "bodyPart": "Back",
+        "category": "Barbell",
+        "mediaFileName": "",
+        "summary": [
+            "Stand with your feet shoulder-width apart and grip the barbell with an overhand grip.",
+            "Bend at the hips until your torso is nearly parallel to the floor, keeping your back flat.",
+            "Let the bar rest on the floor between each rep.",
+            "Pull the bar explosively toward your lower chest by driving your elbows back.",
+            "Lower the bar back to the floor under control.",
+            "Reset your position and repeat each rep from a dead stop."
+        ]
+    },
+    {
+        "name": "Pull-Up",
+        "bodyPart": "Back",
+        "category": "Reps Only",
+        "mediaFileName": "",
+        "summary": [
+            "Grab the pull-up bar with an overhand grip, hands slightly wider than shoulder width.",
+            "Hang with your arms fully extended and core engaged.",
+            "Pull your chin above the bar by bending your elbows and squeezing your back.",
+            "Pause briefly at the top of the movement.",
+            "Lower yourself back down with control until your arms are fully extended.",
+            "Repeat for your desired number of reps."
+        ]
+    },
+    {
+        "name": "Pull-Up (Assisted)",
+        "bodyPart": "Back",
+        "category": "Assisted Bodyweight",
+        "mediaFileName": "",
+        "summary": [
+            "Set up an assisted pull-up machine or use a resistance band for support.",
+            "Grab the bar with an overhand grip, hands slightly wider than shoulder width.",
+            "Step onto the machine platform or place your knees in the band.",
+            "Pull your chin above the bar by bending your elbows and squeezing your back.",
+            "Pause at the top, then lower yourself back down with control.",
+            "Repeat while maintaining proper form throughout."
+        ]
+    },
+    {
+        "name": "Pull-Up (Weighted)",
+        "bodyPart": "Back",
+        "category": "Weighted Bodyweight",
+        "mediaFileName": "",
+        "summary": [
+            "Attach a weight belt or wear a weighted vest for added resistance.",
+            "Grab the bar with an overhand grip, hands slightly wider than shoulder width.",
+            "Hang with arms fully extended and core braced.",
+            "Pull your chin above the bar by driving your elbows down and back.",
+            "Pause at the top, then lower yourself under control.",
+            "Repeat while keeping proper posture and control."
+        ]
+    },
+    {
+        "name": "Seated Row (Cable)",
+        "bodyPart": "Back",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Sit at a cable row machine with your feet placed firmly on the platform.",
+            "Grab the handle with both hands and sit upright with your back straight.",
+            "Pull the handle toward your torso by bending your elbows and squeezing your shoulder blades.",
+            "Keep your elbows close to your body throughout the movement.",
+            "Slowly extend your arms to return to the starting position.",
+            "Repeat with control for your desired number of reps."
+        ]
+    },
+    {
+        "name": "Seated Row (Machine)",
+        "bodyPart": "Back",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Sit on the machine with your chest against the pad and feet flat on the floor.",
+            "Grab the handles with a neutral grip and keep your arms extended.",
+            "Pull the handles toward your body by driving your elbows straight back.",
+            "Squeeze your shoulder blades together at the peak of the movement.",
+            "Slowly return the handles to the starting position with control.",
+            "Repeat while keeping your torso still and core engaged."
+        ]
+    },
+    {
+        "name": "Seated Row Wide Grip (Cable)",
+        "bodyPart": "Back",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Sit at a cable row station and attach a wide grip bar to the pulley.",
+            "Place your feet on the platform and sit upright with your back straight.",
+            "Grab the bar with a wide overhand grip and extend your arms.",
+            "Pull the bar toward your upper abdomen by driving your elbows back and flaring them slightly outward.",
+            "Squeeze your shoulder blades together at the peak.",
+            "Slowly return to the starting position and repeat with control."
+        ]
+    },
+    {
+        "name": "Shrug (Dumbbell)",
+        "bodyPart": "Back",
+        "category": "Dumbbell",
+        "mediaFileName": "",
+        "summary": [
+            "Stand upright with a dumbbell in each hand at your sides, palms facing your body.",
+            "Keep your arms straight and your core tight.",
+            "Lift your shoulders straight up toward your ears as high as possible.",
+            "Pause and squeeze your traps at the top of the movement.",
+            "Lower your shoulders back down slowly and under control.",
+            "Repeat for your desired number of reps."
+        ]
+    },
+    {
+        "name": "T-Bar Row (Machine)",
+        "bodyPart": "Back",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Position yourself on the T-bar row machine with your chest against the pad and feet secured.",
+            "Grab the handles with a neutral grip and extend your arms fully.",
+            "Pull the handles toward your torso by driving your elbows back.",
+            "Squeeze your shoulder blades together at the top of the movement.",
+            "Slowly return the handles to the starting position with control.",
+            "Repeat while keeping your chest on the pad and core tight."
+        ]
+    }
+]

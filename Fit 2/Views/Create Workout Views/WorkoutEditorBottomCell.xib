@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WorkoutEditorBottomCell" id="gTV-IL-0wX" customClass="WorkoutEditorBottomCell" customModule="Fit_2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="608" height="391"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="608" height="391"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S4R-aB-Dab">
+                        <rect key="frame" x="0.0" y="0.0" width="608" height="391"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPT-lA-bC5">
+                                <rect key="frame" x="8" y="10" width="592" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="tQb-2W-Ypw"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="+ Add Exercise"/>
+                                <connections>
+                                    <action selector="addExercisePressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="eYo-T0-pgo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVR-b9-EtZ">
+                                <rect key="frame" x="8" y="53" width="292" height="35"/>
+                                <color key="backgroundColor" name="TabBarColor"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Calculators"/>
+                                <connections>
+                                    <action selector="calculatorsPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="kKV-fl-c6u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ww-dw-aQ7">
+                                <rect key="frame" x="308" y="53" width="292" height="35"/>
+                                <color key="backgroundColor" name="TabBarColor"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="trash" catalog="system" title="Discard Workout"/>
+                                <connections>
+                                    <action selector="discardWorkoutPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="5Pw-08-YLP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qVR-b9-EtZ" firstAttribute="top" secondItem="xPT-lA-bC5" secondAttribute="bottom" constant="8" id="Buk-9w-xDJ"/>
+                            <constraint firstAttribute="trailing" secondItem="xPT-lA-bC5" secondAttribute="trailing" constant="8" id="Dj4-oA-xjN"/>
+                            <constraint firstItem="xPT-lA-bC5" firstAttribute="top" secondItem="S4R-aB-Dab" secondAttribute="top" constant="10" id="Eya-Gd-L6v"/>
+                            <constraint firstItem="8ww-dw-aQ7" firstAttribute="width" secondItem="qVR-b9-EtZ" secondAttribute="width" id="Gx6-dX-84N"/>
+                            <constraint firstItem="8ww-dw-aQ7" firstAttribute="leading" secondItem="qVR-b9-EtZ" secondAttribute="trailing" constant="8" id="QSF-Bc-Ehb"/>
+                            <constraint firstItem="8ww-dw-aQ7" firstAttribute="centerY" secondItem="qVR-b9-EtZ" secondAttribute="centerY" id="VA8-5t-zgT"/>
+                            <constraint firstItem="qVR-b9-EtZ" firstAttribute="leading" secondItem="S4R-aB-Dab" secondAttribute="leading" constant="8" id="fXC-NQ-xij"/>
+                            <constraint firstItem="8ww-dw-aQ7" firstAttribute="height" secondItem="qVR-b9-EtZ" secondAttribute="height" id="kpU-iN-Gwn"/>
+                            <constraint firstItem="xPT-lA-bC5" firstAttribute="leading" secondItem="S4R-aB-Dab" secondAttribute="leading" constant="8" id="qI0-ru-tbL"/>
+                            <constraint firstAttribute="trailing" secondItem="8ww-dw-aQ7" secondAttribute="trailing" constant="8" id="xIU-Nv-Jz2"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="S4R-aB-Dab" secondAttribute="bottom" id="7vl-Gd-T3W"/>
+                <constraint firstItem="S4R-aB-Dab" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="A5N-98-eVg"/>
+                <constraint firstItem="S4R-aB-Dab" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Cek-VC-rOq"/>
+                <constraint firstAttribute="trailing" secondItem="S4R-aB-Dab" secondAttribute="trailing" id="gz7-kg-5yW"/>
+            </constraints>
+            <size key="customSize" width="608" height="391"/>
+            <connections>
+                <outlet property="calculatorsButton" destination="qVR-b9-EtZ" id="rXb-fM-s1z"/>
+                <outlet property="discardButton" destination="8ww-dw-aQ7" id="4ic-Rt-e6j"/>
+            </connections>
+            <point key="canvasLocation" x="555.72519083969462" y="108.80281690140846"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="trash" catalog="system" width="117" height="128"/>
+        <namedColor name="TabBarColor">
+            <color red="0.76499998569488525" green="0.76399999856948853" blue="0.78100001811981201" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

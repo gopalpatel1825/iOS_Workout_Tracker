@@ -1,0 +1,277 @@
+[
+    {
+        "name": "Arnold Press (Dumbbell)",
+        "bodyPart": "Shoulders",
+        "category": "Dumbbell",
+        "mediaFileName": "",
+        "summary": [
+            "Sit on a bench with back support, holding a dumbbell in each hand at shoulder height, palms facing you.",
+            "Press the dumbbells overhead while rotating your palms to face forward.",
+            "Extend your arms fully at the top of the press.",
+            "Slowly lower the dumbbells back to the starting position, rotating your palms to face you.",
+            "Repeat with control for your desired number of reps."
+        ]
+    },
+    {
+        "name": "Face Pull (Cable)",
+        "bodyPart": "Shoulders",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Attach a rope handle to a high pulley and stand facing the machine.",
+            "Grab the rope with both hands, palms facing in.",
+            "Pull the rope toward your face, flaring your elbows outward.",
+            "Squeeze your shoulder blades together at the peak.",
+            "Return to the starting position with control.",
+            "Repeat for reps."
+        ]
+    },
+    {
+        "name": "Front Raise (Dumbbell)",
+        "bodyPart": "Shoulders",
+        "category": "Dumbbell",
+        "mediaFileName": "",
+        "summary": [
+            "Stand with a dumbbell in each hand in front of your thighs, palms facing down.",
+            "Raise one or both dumbbells in front of you to shoulder height.",
+            "Keep your arms straight or slightly bent throughout.",
+            "Lower the dumbbells back down slowly.",
+            "Repeat for the desired number of reps."
+        ]
+    },
+    {
+        "name": "Front Raise (Barbell)",
+        "bodyPart": "Shoulders",
+        "category": "Barbell",
+        "mediaFileName": "",
+        "summary": [
+            "Stand upright holding a barbell with both hands in front of your thighs, palms facing your body.",
+            "Lift the barbell straight up in front of you to shoulder height.",
+            "Pause briefly at the top, then lower with control.",
+            "Keep your core tight and back straight throughout the motion.",
+            "Repeat for reps."
+        ]
+    },
+    {
+        "name": "Front Raise (Cable)",
+        "bodyPart": "Shoulders",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Attach a straight bar to a low pulley and stand facing away from the machine.",
+            "Grab the bar between your legs with an overhand grip.",
+            "Lift the bar straight up in front of your body to shoulder height.",
+            "Lower it slowly back to the starting position.",
+            "Repeat with control for your desired number of reps."
+        ]
+    },
+    {
+        "name": "Lateral Raise (Dumbbell)",
+        "bodyPart": "Shoulders",
+        "category": "Dumbbell",
+        "mediaFileName": "",
+        "summary": [
+            "Stand with a dumbbell in each hand at your sides, palms facing inward.",
+            "Raise your arms out to the sides until they are parallel to the floor.",
+            "Keep a slight bend in your elbows throughout the movement.",
+            "Pause at the top, then lower the dumbbells slowly.",
+            "Repeat for reps."
+        ]
+    },
+    {
+        "name": "Lateral Raise (Cable)",
+        "bodyPart": "Shoulders",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Attach a single handle to the low pulley and stand to the side of the machine.",
+            "Grab the handle with the outside arm and stand upright.",
+            "Raise your arm to the side until it is parallel to the floor.",
+            "Lower with control and repeat.",
+            "Switch arms after completing your reps."
+        ]
+    },
+    {
+        "name": "Lateral Raise (Machine)",
+        "bodyPart": "Shoulders",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Sit on the lateral raise machine with your arms under the pads.",
+            "Grip the handles and keep your back straight against the pad.",
+            "Lift your arms out to the sides until parallel to the ground.",
+            "Pause, then lower the arms slowly.",
+            "Repeat for reps."
+        ]
+    },
+    {
+        "name": "Military Press (Barbell)",
+        "bodyPart": "Shoulders",
+        "category": "Barbell",
+        "mediaFileName": "",
+        "summary": [
+            "Stand with feet shoulder-width apart holding a barbell at shoulder height.",
+            "Press the barbell overhead until your arms are fully extended.",
+            "Lower the bar back to shoulder level with control.",
+            "Keep your core engaged and back straight.",
+            "Repeat for the desired number of reps."
+        ]
+    },
+    {
+        "name": "Standing Overhead Press (Barbell)",
+        "bodyPart": "Shoulders",
+        "category": "Barbell",
+        "mediaFileName": "",
+        "summary": [
+            "Stand upright holding a barbell at shoulder height with an overhand grip.",
+            "Press the bar overhead until your arms are fully extended.",
+            "Lower the bar back down to shoulder height.",
+            "Keep your core braced and avoid leaning back.",
+            "Repeat for reps."
+        ]
+    },
+    {
+        "name": "Standing Overhead Press (Cable)",
+        "bodyPart": "Shoulders",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Attach a straight bar to the low pulley on a cable machine.",
+            "Grab the bar with an overhand grip and bring it to shoulder level.",
+            "Stand tall and press the bar straight overhead until your arms are fully extended.",
+            "Lower the bar back to your shoulders with control.",
+            "Repeat for the desired number of reps."
+        ]
+    },
+    {
+        "name": "Standing Overhead Press (Dumbbell)",
+        "bodyPart": "Shoulders",
+        "category": "Dumbbell",
+        "mediaFileName": "",
+        "summary": [
+            "Stand upright with a dumbbell in each hand at shoulder height, palms facing forward.",
+            "Press the dumbbells overhead until your arms are fully extended.",
+            "Lower the dumbbells back down with control.",
+            "Keep your core tight and avoid arching your back.",
+            "Repeat for reps."
+        ]
+    },
+    {
+        "name": "Standing Overhead Press (Smith Machine)",
+        "bodyPart": "Shoulders",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Stand under the Smith machine bar at shoulder height and grip it slightly wider than shoulder-width.",
+            "Unrack the bar and press it overhead until your arms are extended.",
+            "Lower the bar back to shoulder level slowly.",
+            "Keep your feet planted and core braced.",
+            "Repeat with control."
+        ]
+    },
+    {
+        "name": "Reverse Fly (Cable)",
+        "bodyPart": "Shoulders",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Attach two handles to the high pulleys and stand in the center of the cable machine.",
+            "Cross your arms in front and grab the opposite handle in each hand.",
+            "Pull the handles outward and back in a reverse fly motion.",
+            "Squeeze your shoulder blades together at the peak.",
+            "Return to the starting position and repeat."
+        ]
+    },
+    {
+        "name": "Reverse Fly (Dumbbell)",
+        "bodyPart": "Shoulders",
+        "category": "Dumbbell",
+        "mediaFileName": "",
+        "summary": [
+            "Hold a dumbbell in each hand and hinge at the hips with a flat back.",
+            "Let the weights hang in front of you, palms facing each other.",
+            "Raise the dumbbells out to the sides in a wide arc.",
+            "Squeeze your shoulder blades together at the top.",
+            "Lower the dumbbells with control and repeat."
+        ]
+    },
+    {
+        "name": "Reverse Fly (Machine)",
+        "bodyPart": "Shoulders",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Sit at the reverse fly machine facing the pad.",
+            "Grab the handles with arms extended forward.",
+            "Pull the handles outward and back, keeping a slight bend in your elbows.",
+            "Squeeze your shoulder blades together at the end of the motion.",
+            "Return to the starting position slowly and repeat."
+        ]
+    },
+    {
+        "name": "Seated Lateral Raise",
+        "bodyPart": "Shoulders",
+        "category": "Other",
+        "mediaFileName": "",
+        "summary": [
+            "Sit on a bench with a dumbbell in each hand at your sides.",
+            "Keep your back straight and core tight.",
+            "Raise the dumbbells out to the sides until your arms are parallel to the floor.",
+            "Pause, then lower the dumbbells with control.",
+            "Repeat for reps."
+        ]
+    },
+    {
+        "name": "Seated Overhead Press (Barbell)",
+        "bodyPart": "Shoulders",
+        "category": "Barbell",
+        "mediaFileName": "",
+        "summary": [
+            "Sit on a bench with back support and hold a barbell at shoulder height.",
+            "Press the barbell overhead until your arms are fully extended.",
+            "Lower the bar back to shoulder height with control.",
+            "Keep your feet flat on the floor and core braced.",
+            "Repeat for the desired number of reps."
+        ]
+    },
+    {
+        "name": "Seated Overhead Press (Dumbbell)",
+        "bodyPart": "Shoulders",
+        "category": "Dumbbell",
+        "mediaFileName": "",
+        "summary": [
+            "Sit on a bench with back support, holding a dumbbell in each hand at shoulder height.",
+            "Press the dumbbells overhead until your arms are fully extended.",
+            "Lower them back down slowly to the starting position.",
+            "Keep your back flat and core engaged.",
+            "Repeat with control."
+        ]
+    },
+    {
+        "name": "Shoulder Press (Machine)",
+        "bodyPart": "Shoulders",
+        "category": "Machine",
+        "mediaFileName": "",
+        "summary": [
+            "Sit on the shoulder press machine with your back against the pad.",
+            "Grasp the handles with palms facing forward and elbows bent.",
+            "Press the handles upward until your arms are fully extended.",
+            "Lower the handles back down to the starting position with control.",
+            "Repeat for reps."
+        ]
+    },
+    {
+        "name": "Shoulder Press (Plate Loaded)",
+        "bodyPart": "Shoulders",
+        "category": "Plate Loaded",
+        "mediaFileName": "",
+        "summary": [
+            "Sit on the plate-loaded shoulder press machine with your back against the pad.",
+            "Grip the handles and push them upward until your arms are extended.",
+            "Lower the handles slowly with control.",
+            "Keep your core braced throughout the movement.",
+            "Repeat for your desired number of reps."
+        ]
+    }
+]
+
