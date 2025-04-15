@@ -33,7 +33,7 @@
                                 <rect key="frame" x="0.0" y="32" width="416" height="35"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Previous" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9q-qW-COo">
-                                        <rect key="frame" x="69" y="7.3333333333333339" width="69" height="20.333333333333329"/>
+                                        <rect key="frame" x="74" y="7.3333333333333339" width="69" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -45,7 +45,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lbs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yyq-kH-g9C">
-                                        <rect key="frame" x="241.66666666666666" y="7" width="23.666666666666657" height="21"/>
+                                        <rect key="frame" x="236.66666666666666" y="7" width="23.666666666666657" height="21"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -69,8 +69,8 @@
                                     <constraint firstItem="ATY-5B-hjN" firstAttribute="centerY" secondItem="nYo-zI-bqy" secondAttribute="centerY" id="5b8-hg-EqH"/>
                                     <constraint firstItem="jNP-bV-LYV" firstAttribute="leading" secondItem="zy0-xj-ONQ" secondAttribute="trailing" constant="45" id="8Rs-eS-q4x"/>
                                     <constraint firstItem="jNP-bV-LYV" firstAttribute="centerY" secondItem="nYo-zI-bqy" secondAttribute="centerY" id="9nL-c7-W1v"/>
-                                    <constraint firstItem="zy0-xj-ONQ" firstAttribute="leading" secondItem="Yyq-kH-g9C" secondAttribute="trailing" constant="40" id="FqL-s5-75g"/>
-                                    <constraint firstItem="m9q-qW-COo" firstAttribute="leading" secondItem="ATY-5B-hjN" secondAttribute="trailing" constant="40" id="Uee-Xf-UVC"/>
+                                    <constraint firstItem="zy0-xj-ONQ" firstAttribute="leading" secondItem="Yyq-kH-g9C" secondAttribute="trailing" constant="45" id="FqL-s5-75g"/>
+                                    <constraint firstItem="m9q-qW-COo" firstAttribute="leading" secondItem="ATY-5B-hjN" secondAttribute="trailing" constant="45" id="Uee-Xf-UVC"/>
                                     <constraint firstItem="zy0-xj-ONQ" firstAttribute="centerY" secondItem="nYo-zI-bqy" secondAttribute="centerY" id="bMI-H9-c6Y"/>
                                     <constraint firstItem="m9q-qW-COo" firstAttribute="centerY" secondItem="nYo-zI-bqy" secondAttribute="centerY" id="dcC-81-ueR"/>
                                     <constraint firstItem="Yyq-kH-g9C" firstAttribute="centerY" secondItem="nYo-zI-bqy" secondAttribute="centerY" id="ohI-Q4-yU4"/>
@@ -89,7 +89,7 @@
                                     <constraint firstAttribute="height" constant="35" id="9Ma-hW-Xsj"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Add Set"/>
+                                <buttonConfiguration key="configuration" style="tinted" image="plus" catalog="system" title=" Add Set"/>
                                 <connections>
                                     <action selector="addSetPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Lr4-Bw-qpw"/>
                                 </connections>
@@ -145,14 +145,15 @@
     <resources>
         <image name="checkmark" catalog="system" width="128" height="114"/>
         <image name="ellipsis" catalog="system" width="128" height="37"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -62,11 +62,11 @@ extension ExerciseRecordsControllers: UICollectionViewDelegate, UICollectionView
         
         let flowLayout = collectionViewLayout as? UICollectionViewFlowLayout
         let space: CGFloat = (flowLayout?.minimumInteritemSpacing ?? 0.0) + (flowLayout?.sectionInset.left ?? 0.0) + (flowLayout?.sectionInset.right ?? 0.0)
-        let size:CGFloat = (collectionView.frame.size.width - space)
-        let setHeight = 55 // Estimated height for set cell
+        let size:CGFloat = (collectionView.frame.size.width)
+        let setHeight = 43 // Estimated height for set cell
         
         if (indexPath.row == 0) {
-            return CGSize(width: size, height: 150)
+            return CGSize(width: size, height: 135)
         } else if (indexPath.row == 1) {
             let numSets = exercise?.oneRepMaxPRs!.count ?? 0
             let tableViewHeight = numSets * setHeight

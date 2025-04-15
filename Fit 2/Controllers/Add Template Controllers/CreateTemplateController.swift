@@ -65,8 +65,10 @@ class CreateTemplateController: UIViewController {
         collectionView.reloadData()
         print("\(template?.name ?? "nil")")
         
-        folder!.addToTemplates(self.template!)
-        self.template!.folder = self.folder!
+        let id = folder!.objectID
+        let folderInContext = coreDataHelper.templateContext.object(with: id) as! Folder
+        folderInContext.addToTemplates(self.template!)
+        self.template!.folder = folderInContext
         
         let context = coreDataHelper.templateContext
         context.performAndWait {

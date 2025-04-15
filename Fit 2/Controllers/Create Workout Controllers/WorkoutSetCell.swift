@@ -125,7 +125,7 @@ class WorkoutSetCell: UITableViewCell, UITextFieldDelegate {
     
     func setUnselected() {
         self.contentView.backgroundColor = .secondarySystemBackground
-        setCompletedButton.tintColor = .opaqueSeparator
+        setCompletedButton.tintColor = .setUnselectedButton
         self.set!.completed = false
     }
     

@@ -75,7 +75,23 @@ class TemplateCell: UICollectionViewCell {
         self.layer.borderWidth = 2 //change to required borderwidth
         
         configureButtonMenu()
+        setLabel()
         
+    }
+    
+    private func setLabel() {
+        let exercises = template!.exercises!.array as! [WorkoutExercise]
+        
+        if (exercises.isEmpty) {
+            descriptionLabel.text = "No exercises"
+        } else {
+            var string = ""
+            for i in 0..<(exercises.count - 1) {
+                string.append("\(exercises[i].exercise!.name ?? ""), ")
+            }
+            string.append(exercises.last?.exercise!.name ?? "")
+            descriptionLabel.text = string
+        }
     }
     
     

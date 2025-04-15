@@ -54,18 +54,18 @@ class ExercisesRootController: UIViewController {
     var currentViewController: UIViewController?
     lazy var firstChildTabVC: UIViewController? = {
         let firstChildTabVC = self.storyboard?.instantiateViewController(withIdentifier: "ExerciseSummaryController") as! ExerciseSummaryController
-        firstChildTabVC.exercise = self.exercise
+        firstChildTabVC.exercise = self.exercise!
         return firstChildTabVC
     }()
     lazy var secondChildTabVC : UIViewController? = {
         let secondChildTabVC = self.storyboard?.instantiateViewController(withIdentifier: "ExercisesHistoryController") as! ExercisesHistoryController
-        secondChildTabVC.exercise = self.exercise
+        secondChildTabVC.exercise = self.exercise!
         return secondChildTabVC
     }()
     
     lazy var thirdChildTabVC : UIViewController? = {
         let thirdChildTabVC = self.storyboard?.instantiateViewController(withIdentifier: "ExercisesChartsController") as! ExercisesChartsController
-        thirdChildTabVC.exercise = self.exercise
+        thirdChildTabVC.exercise = self.exercise!
         return thirdChildTabVC
     }()
     

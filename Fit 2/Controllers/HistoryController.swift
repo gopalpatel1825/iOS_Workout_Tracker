@@ -41,6 +41,8 @@ class HistoryController: UIViewController {
         
         self.loadData()
         
+        setApperance()
+        
         hideWorkoutBar()
         
     }
@@ -133,7 +135,7 @@ extension HistoryController: UICollectionViewDataSource, UICollectionViewDelegat
             let estimatedSetHeight: CGFloat = 60 // Adjust based on average set height
             let totalTableHeight = CGFloat(workout.exercises?.count ?? 0) * estimatedSetHeight
             
-            return CGSize(width: size, height: totalTableHeight + 70)
+            return CGSize(width: size, height: totalTableHeight + 40)
         }
     }
 
@@ -188,6 +190,16 @@ extension HistoryController {
                 self.collectionView.frame.size.height = self.collectionView.frame.height + 60
             }
         }
+    }
+    
+    private func setApperance() {
+            let appearance = UINavigationBarAppearance()
+            appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = .tabBar
+            
+            navigationController?.navigationBar.standardAppearance = appearance
+            navigationController?.navigationBar.scrollEdgeAppearance = appearance
+            navigationController?.navigationBar.prefersLargeTitles = false
     }
     
 }

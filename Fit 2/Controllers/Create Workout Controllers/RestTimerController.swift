@@ -66,9 +66,12 @@ class RestTimerController: UIViewController {
         startTimerButton.setTitle(isRunning ? "Cancel Timer" : "Start Workout Timer", for: .normal)
         if (isRunning) {
             startTimerButton.backgroundColor = .quaternarySystemFill
+            startTimerButton.tintColor = .black
         } else {
             startTimerButton.backgroundColor = .link
+            startTimerButton.tintColor = .white
         }
+        
     }
 
 

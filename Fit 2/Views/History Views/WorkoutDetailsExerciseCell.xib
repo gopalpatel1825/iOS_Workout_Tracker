@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,18 +20,8 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QEV-pi-6bU">
                         <rect key="frame" x="0.0" y="0.0" width="445" height="206"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Btm-Ba-RoS">
-                                <rect key="frame" x="0.0" y="8" width="42" height="42"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="42" id="kIh-39-wD5"/>
-                                    <constraint firstAttribute="height" constant="42" id="oRe-tb-mlT"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kF3-ic-og3">
-                                <rect key="frame" x="42" y="18.666666666666668" width="403" height="21.000000000000004"/>
+                                <rect key="frame" x="400.66666666666669" y="18.666666666666668" width="44.333333333333314" height="21.000000000000004"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="9Bv-nu-nob"/>
                                 </constraints>
@@ -69,24 +59,30 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIcon" translatesAutoresizingMaskIntoConstraints="NO" id="vef-za-QhY">
+                                <rect key="frame" x="3" y="9" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="G81-Uf-Fft"/>
+                                    <constraint firstAttribute="width" constant="40" id="xrA-7u-eQg"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Btm-Ba-RoS" firstAttribute="top" secondItem="QEV-pi-6bU" secondAttribute="top" constant="8" id="EP7-KA-0oO"/>
-                            <constraint firstItem="kF3-ic-og3" firstAttribute="centerY" secondItem="Btm-Ba-RoS" secondAttribute="centerY" id="IWe-x9-VzF"/>
-                            <constraint firstItem="OU2-wy-pwO" firstAttribute="centerX" secondItem="Btm-Ba-RoS" secondAttribute="centerX" id="Ir8-tA-j4b"/>
-                            <constraint firstItem="kF3-ic-og3" firstAttribute="leading" secondItem="Btm-Ba-RoS" secondAttribute="trailing" id="J7J-50-Xkg"/>
+                            <constraint firstItem="chb-sH-ss6" firstAttribute="top" secondItem="QEV-pi-6bU" secondAttribute="top" constant="53" id="81S-GI-f2A"/>
                             <constraint firstAttribute="bottom" secondItem="0gh-dj-3yr" secondAttribute="bottom" id="Ldc-Iz-cig"/>
+                            <constraint firstItem="vef-za-QhY" firstAttribute="leading" secondItem="QEV-pi-6bU" secondAttribute="leading" constant="3" id="OAe-gY-CMC"/>
                             <constraint firstAttribute="trailing" secondItem="4zZ-bl-60l" secondAttribute="trailing" constant="18" id="P8i-j5-beJ"/>
                             <constraint firstItem="chb-sH-ss6" firstAttribute="leading" secondItem="OU2-wy-pwO" secondAttribute="trailing" constant="25" id="Tuv-BW-OhO"/>
                             <constraint firstItem="0gh-dj-3yr" firstAttribute="leading" secondItem="QEV-pi-6bU" secondAttribute="leading" id="WWd-xe-1TI"/>
                             <constraint firstItem="0gh-dj-3yr" firstAttribute="top" secondItem="OU2-wy-pwO" secondAttribute="bottom" id="Wgz-3E-ja6"/>
-                            <constraint firstItem="OU2-wy-pwO" firstAttribute="top" secondItem="Btm-Ba-RoS" secondAttribute="bottom" constant="3" id="Wyj-gS-lol"/>
                             <constraint firstAttribute="trailing" secondItem="0gh-dj-3yr" secondAttribute="trailing" id="Xos-QS-iPv"/>
                             <constraint firstAttribute="trailing" secondItem="kF3-ic-og3" secondAttribute="trailing" id="YbP-cC-lwX"/>
+                            <constraint firstItem="vef-za-QhY" firstAttribute="centerY" secondItem="kF3-ic-og3" secondAttribute="centerY" id="ZIh-ZS-CDy"/>
+                            <constraint firstItem="OU2-wy-pwO" firstAttribute="leading" secondItem="QEV-pi-6bU" secondAttribute="leading" constant="10" id="eLh-sN-1Nq"/>
+                            <constraint firstItem="OU2-wy-pwO" firstAttribute="top" secondItem="vef-za-QhY" secondAttribute="bottom" constant="4" id="giu-68-lGO"/>
                             <constraint firstItem="4zZ-bl-60l" firstAttribute="centerY" secondItem="chb-sH-ss6" secondAttribute="centerY" id="jyS-Sj-mJV"/>
                             <constraint firstItem="chb-sH-ss6" firstAttribute="centerY" secondItem="OU2-wy-pwO" secondAttribute="centerY" id="nAa-oF-XBf"/>
-                            <constraint firstItem="Btm-Ba-RoS" firstAttribute="leading" secondItem="QEV-pi-6bU" secondAttribute="leading" id="o4d-14-ZFU"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -100,7 +96,7 @@
             </constraints>
             <size key="customSize" width="445" height="206"/>
             <connections>
-                <outlet property="letterLabel" destination="Btm-Ba-RoS" id="hzN-02-2MJ"/>
+                <outlet property="imageView" destination="vef-za-QhY" id="wAs-6a-V9w"/>
                 <outlet property="nameLabel" destination="kF3-ic-og3" id="33N-iC-McH"/>
                 <outlet property="tableView" destination="0gh-dj-3yr" id="jcx-8C-M9N"/>
             </connections>
@@ -108,6 +104,7 @@
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="AppIcon" width="341.33334350585938" height="341.33334350585938"/>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

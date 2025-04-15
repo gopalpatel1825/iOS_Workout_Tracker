@@ -28,6 +28,8 @@ class ProfileController: UIViewController, ChartViewDelegate {
         
         fetchWorkoutData()
         
+        setApperance()
+        
         numWorkoutsChart.clipsToBounds = true
     }
     
@@ -144,7 +146,15 @@ class ProfileController: UIViewController, ChartViewDelegate {
         numWorkoutsChart.notifyDataSetChanged()
     }
 
-    
+    private func setApperance() {
+            let appearance = UINavigationBarAppearance()
+            appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = .tabBar
+            
+            navigationController?.navigationBar.standardAppearance = appearance
+            navigationController?.navigationBar.scrollEdgeAppearance = appearance
+            navigationController?.navigationBar.prefersLargeTitles = false
+    }
     
 }
 

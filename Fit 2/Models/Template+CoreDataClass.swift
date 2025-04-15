@@ -20,6 +20,10 @@ public class Template: NSManagedObject {
         
         let template = self
         
+        let date = Date()
+        
+        workout.startDate? = date
+        
         // Turn the exercises into an array that we can iterate over
         let exercises = template.exercises?.array as? [WorkoutExercise] ?? []
         
@@ -41,9 +45,11 @@ public class Template: NSManagedObject {
                 newExercise.addToSets(newSet)
             }
             // Add the exercise to the workout
+            newExercise.date = date
             workout.addToExercises(newExercise)
         }
         template.addToWorkouts(workout)
+        
         workout.template = template
     }
     

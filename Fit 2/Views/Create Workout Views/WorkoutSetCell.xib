@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -42,7 +42,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="-" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3iI-1l-xjx" userLabel="Weight Text Field">
-                        <rect key="frame" x="248" y="28" width="60" height="19"/>
+                        <rect key="frame" x="238" y="28" width="60" height="19"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="60" id="67t-U1-tax"/>
@@ -53,7 +53,7 @@
                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                     </textField>
                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" highlighted="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="-" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="npA-JJ-QG7" userLabel="Reps Text Field">
-                        <rect key="frame" x="323" y="28" width="60" height="19"/>
+                        <rect key="frame" x="318" y="28" width="60" height="19"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="18.670000000000002" id="JlT-PD-oDn"/>
@@ -82,21 +82,19 @@
                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                 <constraints>
                     <constraint firstItem="3iI-1l-xjx" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="3un-V7-Gud"/>
-                    <constraint firstItem="npA-JJ-QG7" firstAttribute="leading" secondItem="3iI-1l-xjx" secondAttribute="trailing" constant="15" id="90x-Re-g0r"/>
+                    <constraint firstItem="npA-JJ-QG7" firstAttribute="leading" secondItem="3iI-1l-xjx" secondAttribute="trailing" constant="20" id="90x-Re-g0r"/>
                     <constraint firstAttribute="trailing" secondItem="B0e-pj-isF" secondAttribute="trailing" constant="5" id="E4s-YY-Iqe"/>
                     <constraint firstItem="QtB-pz-3wj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="EfK-As-dav"/>
-                    <constraint firstItem="B0e-pj-isF" firstAttribute="leading" secondItem="npA-JJ-QG7" secondAttribute="trailing" constant="15" id="Fyt-XV-k7p"/>
+                    <constraint firstItem="B0e-pj-isF" firstAttribute="leading" secondItem="npA-JJ-QG7" secondAttribute="trailing" constant="20" id="Fyt-XV-k7p"/>
                     <constraint firstAttribute="trailing" secondItem="B0e-pj-isF" secondAttribute="trailing" constant="5" id="MQL-gR-JPe"/>
                     <constraint firstItem="X4t-wO-7wa" firstAttribute="leading" secondItem="QtB-pz-3wj" secondAttribute="trailing" constant="30" id="Oon-TW-9Yt"/>
                     <constraint firstItem="B0e-pj-isF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="P7N-Iy-AR8"/>
                     <constraint firstItem="3iI-1l-xjx" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Pzq-KV-PTC"/>
                     <constraint firstItem="QtB-pz-3wj" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="RIC-pJ-YEH"/>
-                    <constraint firstItem="B0e-pj-isF" firstAttribute="leading" secondItem="npA-JJ-QG7" secondAttribute="trailing" constant="15" id="Uaf-7V-kfe"/>
                     <constraint firstItem="B0e-pj-isF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dHq-ur-twk"/>
                     <constraint firstItem="npA-JJ-QG7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="g7u-5P-JeK"/>
                     <constraint firstItem="QtB-pz-3wj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="khe-mc-IAg"/>
                     <constraint firstItem="npA-JJ-QG7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="lgw-TF-by6"/>
-                    <constraint firstItem="npA-JJ-QG7" firstAttribute="leading" secondItem="3iI-1l-xjx" secondAttribute="trailing" constant="15" id="oH1-4Y-z35"/>
                     <constraint firstItem="X4t-wO-7wa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ren-To-TuI"/>
                     <constraint firstItem="QtB-pz-3wj" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="vpa-O8-1Mu"/>
                 </constraints>
