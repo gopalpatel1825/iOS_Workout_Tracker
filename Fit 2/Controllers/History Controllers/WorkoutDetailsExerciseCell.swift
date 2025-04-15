@@ -10,8 +10,7 @@ import CoreData
 
 class WorkoutDetailsExerciseCell: UICollectionViewCell {
     
-    
-    @IBOutlet weak var letterLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var nameLabel: UILabel!
     
@@ -37,9 +36,10 @@ class WorkoutDetailsExerciseCell: UICollectionViewCell {
     func configure() {
         
         nameLabel.text = exercise?.exercise!.name
-        letterLabel.text = exercise?.exercise!.name?.first?.description ?? ""
         
         loadSets()
+        
+        imageView.layer.cornerRadius = 20
 
         
     }

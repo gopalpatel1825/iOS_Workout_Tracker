@@ -10,6 +10,7 @@ import CoreData
 
 class ExercisesRecordsHeaderCell: UICollectionViewCell {
     
+    @IBOutlet weak var titleLabel: UILabel!
     
     @IBOutlet weak var oneRepMaxLabel: UILabel!
     
@@ -44,13 +45,15 @@ class ExercisesRecordsHeaderCell: UICollectionViewCell {
     
     func configureLabels() {
         
-        let oneRepMaxString = String(format: "%.1flbs", best1RMSet?.oneRepMax ?? 0)// "\(best1RMSet?.oneRepMax ?? 0)lbs"
+        titleLabel.text = "Personal Records - \(exercise!.name!)"
+        
+        let oneRepMaxString = String(format: "%.0flbs", best1RMSet?.oneRepMax ?? 0)// "\(best1RMSet?.oneRepMax ?? 0)lbs"
         oneRepMaxLabel.text = oneRepMaxString
         
-        let volumeString = String(format: "%.1flbs", bestVolumeSet?.volume ?? 0)//"\(bestVolumeSet?.volume ?? 0)"
+        let volumeString = String(format: "%.0flbs", bestVolumeSet?.volume ?? 0)//"\(bestVolumeSet?.volume ?? 0)"
         volumeLabel.text = volumeString
         
-        let weightString = "\(bestWeightSet?.weight ?? 0)lbs"
+        let weightString = String(format: "%0.1flbs", bestWeightSet?.weight ?? 0)
         weightLabel.text = weightString
     }
     

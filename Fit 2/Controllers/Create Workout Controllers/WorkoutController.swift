@@ -99,7 +99,7 @@ class WorkoutController: UIViewController {
             
             for aset in exercise.sets!.array as! [Set] {
                 print("Set \(aset.index + 1): Weight: \(aset.weight), Reps: \(aset.reps)")
-                baseExercise.addToPRs(set: aset)
+                baseExercise.refreshPersonalRecords()
                 volume = volume + Float(aset.volume)
                 numSets += 1
             }
@@ -188,7 +188,7 @@ extension WorkoutController: UICollectionViewDelegate, UICollectionViewDataSourc
             let estimatedSetHeight: CGFloat = 44 // Adjust based on average set height
             let totalTableHeight = CGFloat(exercise.sets?.count ?? 0) * estimatedSetHeight
             
-            return CGSize(width: size, height: totalTableHeight + 110)
+            return CGSize(width: size, height: totalTableHeight + 100)
         }
     }
 }

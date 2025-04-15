@@ -34,9 +34,9 @@ class ExercisesHistoryController: UIViewController {
     func configure() {
         fetchSessions()
         
-        DispatchQueue.main.async {
-            self.collectionView.reloadData()
-        }
+//        DispatchQueue.main.async {
+//            self.collectionView.reloadData()
+//        }
     }
     
     func fetchSessions() {
@@ -46,12 +46,13 @@ class ExercisesHistoryController: UIViewController {
             
             // Predicate to match the specific exercise AND exclude those linked to a template
         fetchRequest.predicate = NSPredicate(format: "exercise == %@ AND template == nil", exercise!)
-        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "workout.startDate", ascending: false)]
+        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "date", ascending: false)]
 
             do {
                 let results = try context.fetch(fetchRequest)
                 exercises = results
                 print("Results.count \(results.count)")
+                collectionView.reloadData()
             } catch {
                 print("Error fetching WorkoutExercises for Exercise \(exercise!.name ?? "Unknown"): \(error)")
                 exercises = []
@@ -87,7 +88,7 @@ extension ExercisesHistoryController: UICollectionViewDelegate, UICollectionView
         let numSets = exercises[indexPath.row].sets!.count
         let tableViewHeight = numSets * setHeight
         
-        return CGSize(width: size, height: CGFloat(tableViewHeight + 100)) // Adjust padding as needed
+        return CGSize(width: size, height: CGFloat(tableViewHeight + 110)) // Adjust padding as needed
         
     }
 

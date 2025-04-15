@@ -52,7 +52,7 @@ public class Exercise: NSManagedObject {
         }
     }
     
-    func addToPRs(set: Set) {
+    private func addToPRs(set: Set) {
         // Check add to 1RM PRs
         addTo1RMPRs(set)
         // Check add to Volume PRs
@@ -123,6 +123,41 @@ public class Exercise: NSManagedObject {
             self.addToMaxWeightPRs(set)
         }
     }
+    
+    func refreshPersonalRecords() {
+        clearAllPRs()
+        let workoutExercises = fetchWorkoutExercisesSortedByDate()
+
+        for workoutExercise in workoutExercises {
+            guard let sets = workoutExercise.sets?.array as? [Set] else { continue }
+            for set in sets {
+                self.addToPRs(set: set)
+            }
+        }
+    }
+
+    private func clearAllPRs() {
+        self.oneRepMaxPRs = nil
+        self.maxVolumePRs = nil
+        self.maxWeightPRs = nil
+    }
+
+    private func fetchWorkoutExercisesSortedByDate() -> [WorkoutExercise] {
+        let context = CoreDataHelper.shared.workoutContext
+        let request = NSFetchRequest<WorkoutExercise>(entityName: "WorkoutExercise")
+        request.predicate = NSPredicate(format: "exercise == %@ AND template == nil", self)
+        request.sortDescriptors = [NSSortDescriptor(key: "workout.startDate", ascending: true)]
+
+        do {
+            return try context.fetch(request)
+        } catch {
+            print("❌ Failed to fetch workoutExercises: \(error)")
+            return []
+        }
+    }
+
+    
+    
 
 }
 

@@ -115,6 +115,7 @@
             <size key="customSize" width="464" height="135"/>
             <connections>
                 <outlet property="oneRepMaxLabel" destination="Wg2-Yy-sZa" id="pyj-bq-ZG5"/>
+                <outlet property="titleLabel" destination="eaZ-Vo-SUD" id="rL4-2I-kOI"/>
                 <outlet property="volumeLabel" destination="Ue7-ZH-EBO" id="5Uw-1H-RC4"/>
                 <outlet property="weightLabel" destination="AEk-8K-hTK" id="fhb-fs-rsS"/>
             </connections>

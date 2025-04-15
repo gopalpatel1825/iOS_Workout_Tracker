@@ -361,6 +361,12 @@
                                     <action selector="dismissPressed:" destination="b1X-rA-D91" eventType="touchUpInside" id="zJo-53-UJM"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rest Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncm-j6-BfR">
+                                <rect key="frame" x="140.66666666666666" y="137.66666666666666" width="112" height="27.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IiR-Ic-zjM"/>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
@@ -370,8 +376,10 @@
                             <constraint firstItem="gQA-T8-osT" firstAttribute="leading" secondItem="IiR-Ic-zjM" secondAttribute="leading" constant="16" id="FYH-z5-TUs"/>
                             <constraint firstItem="gQA-T8-osT" firstAttribute="top" secondItem="IiR-Ic-zjM" secondAttribute="top" constant="16" id="GrF-lo-uZ6"/>
                             <constraint firstItem="3HA-yH-yST" firstAttribute="top" secondItem="IiR-Ic-zjM" secondAttribute="top" constant="90" id="PXh-ng-hPy"/>
+                            <constraint firstItem="ncm-j6-BfR" firstAttribute="centerX" secondItem="jdg-ZW-O1Z" secondAttribute="centerX" id="WEa-3c-vd6"/>
                             <constraint firstItem="IiR-Ic-zjM" firstAttribute="trailing" secondItem="wZn-0d-xpn" secondAttribute="trailing" constant="8" id="gJ1-CE-pAR"/>
                             <constraint firstItem="wZn-0d-xpn" firstAttribute="leading" secondItem="IiR-Ic-zjM" secondAttribute="leading" constant="8" id="iWT-kd-BiI"/>
+                            <constraint firstItem="ncm-j6-BfR" firstAttribute="centerY" secondItem="gQA-T8-osT" secondAttribute="centerY" id="qJm-du-Nw8"/>
                         </constraints>
                     </view>
                     <connections>
@@ -397,8 +405,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0p0-r3-MUg">
                                 <rect key="frame" x="46.666666666666657" y="351" width="300" height="150"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get Back To Work Slave" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rsg-HS-aFG">
-                                        <rect key="frame" x="59.333333333333343" y="30" width="181" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get Back To Work" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rsg-HS-aFG">
+                                        <rect key="frame" x="82" y="30" width="136" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -538,8 +546,8 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="J9q-VA-F7r">
                                 <rect key="frame" x="0.0" y="118" width="393" height="666"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="jI5-k1-QXY">
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" sectionInsetReference="layoutMargins" id="jI5-k1-QXY">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -791,6 +799,7 @@
                         <rect key="frame" x="0.0" y="118" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="TabBarColor"/>
+                        <navigationBarAppearance key="scrollEdgeAppearance"/>
                     </navigationBar>
                     <connections>
                         <segue destination="93o-HJ-Yfy" kind="relationship" relationship="rootViewController" id="H6Z-1y-k31"/>
@@ -809,6 +818,7 @@
                         <rect key="frame" x="0.0" y="118" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="TabBarColor"/>
+                        <navigationBarAppearance key="scrollEdgeAppearance"/>
                     </navigationBar>
                     <connections>
                         <segue destination="dzG-dC-gkh" kind="relationship" relationship="rootViewController" id="Osg-3N-ZeF"/>
@@ -827,7 +837,11 @@
                         <rect key="frame" x="0.0" y="118" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="TabBarColor"/>
+                        <navigationBarAppearance key="scrollEdgeAppearance"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5Dy-Hw-ySV">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Sd6-vH-owz"/>
                     </connections>
@@ -845,6 +859,7 @@
                         <rect key="frame" x="0.0" y="118" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="TabBarColor"/>
+                        <navigationBarAppearance key="scrollEdgeAppearance"/>
                     </navigationBar>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZOn-Mf-pu3">
                         <autoresizingMask key="autoresizingMask"/>
@@ -869,9 +884,6 @@
                         <color key="tintColor" name="TabBarColor"/>
                         <color key="barTintColor" name="TabBarColor"/>
                         <color key="selectedImageTintColor" systemColor="labelColor"/>
-                        <tabBarAppearance key="standardAppearance">
-                            <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </tabBarAppearance>
                         <tabBarAppearance key="scrollEdgeAppearance"/>
                     </tabBar>
                     <connections>

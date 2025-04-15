@@ -10,7 +10,7 @@ import UIKit
 class HistoryTableViewCell: UITableViewCell {
 
     
-    @IBOutlet weak var letterLabel: UILabel!
+    @IBOutlet weak var pictureView: UIImageView!
     
     @IBOutlet weak var nameLabel: UILabel!
     
@@ -32,8 +32,8 @@ class HistoryTableViewCell: UITableViewCell {
     
     
     func configure() {
-        
-        letterLabel.text = exercise?.exercise?.name?.first?.description ?? ""
+    
+        pictureView.layer.cornerRadius = 41/2
         
         let name = exercise!.exercise?.name
         let count = exercise!.sets?.count

@@ -14,7 +14,7 @@ class ExerciseRecordTableViewCell: UITableViewCell {
     
     @IBOutlet weak var dateLabel: UILabel!
     
-    var set: Set?
+    var set: Set? { didSet {setDateLabel()}}
     
     
     override func awakeFromNib() {
@@ -24,20 +24,20 @@ class ExerciseRecordTableViewCell: UITableViewCell {
     
     func setDateLabel() {
         let date = set!.exercise!.workout!.startDate
-        dateLabel.text = date?.formatted(date: .abbreviated, time: .shortened)
+        dateLabel.text = date?.formatted(date: .abbreviated, time: .omitted)
     }
 
     
     func configureFor1RM() {
-        PRLabel.text = "\(set?.oneRepMax ?? 0)lbs"
+        PRLabel.text = String(format: "%.0flbs", set?.oneRepMax ?? 0)
     }
     
     func configureForVolume() {
-        PRLabel.text = "\(set?.weight ?? 0)lbs x \(set?.reps ?? 0)"
+        PRLabel.text = String(format: "%.0flbs", set?.volume ?? 0)
     }
     
     func configureForWeight() {
-        PRLabel.text = "\(set?.weight ?? 0)lbs"
+        PRLabel.text = String(format: "%0.1flbs", set?.weight ?? 0)
     }
     
     

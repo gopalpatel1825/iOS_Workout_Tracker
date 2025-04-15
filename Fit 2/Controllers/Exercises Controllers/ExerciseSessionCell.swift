@@ -47,6 +47,15 @@ class ExerciseSessionCell: UICollectionViewCell {
         
         fetchSets()
         
+        volumeLabel.text = String(format: "%0.0flbs", exercise!.totalVolume)
+        
+        numSetsLabel.text = String(format: "%0.0f sets", exercise!.sets!.count)
+        
+        let volume = exercise!.totalVolume
+        let avgVol = String(format: "%0.0flbs", volume/Float(exercise!.sets!.count))
+        
+        avgVolumeLabel.text = "\(avgVol)lbs"
+        
     }
     
     func fetchSets() {

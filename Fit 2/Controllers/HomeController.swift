@@ -41,6 +41,8 @@ class HomeController: UIViewController {
         
         reloadFolders()
         
+        setApperance()
+        
         hideWorkoutBar()
         
     }
@@ -77,8 +79,8 @@ class HomeController: UIViewController {
         let workout = Workout(context: coreDataHelper.workoutContext)
         templateWorkoutContext?.initializeWorkout(workout: workout)
         // Assign the workout and template to the workout
-        vc.workout = workout
         workout.startDate = Date()
+        vc.workout = workout
         
         let name = templateWorkoutContext!.name
         workout.name = name
@@ -149,7 +151,7 @@ extension HomeController: UICollectionViewDelegate, UICollectionViewDataSource, 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let flowayout = collectionViewLayout as? UICollectionViewFlowLayout
         let space: CGFloat = (flowayout?.minimumInteritemSpacing ?? 0.0) + (flowayout?.sectionInset.left ?? 0.0) + (flowayout?.sectionInset.right ?? 0.0)
-        let size:CGFloat = (collectionView.frame.size.width - space)
+        let size:CGFloat = (collectionView.frame.size.width)
         
         if (indexPath.row == 0) {
             return CGSize(width: size, height: 180)
@@ -224,7 +226,15 @@ extension HomeController {
         }
     }
     
-    
+    private func setApperance() {
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = UIColor(named: "TabBarColor")
+        
+        navigationController?.navigationBar.standardAppearance = appearance
+        navigationController?.navigationBar.scrollEdgeAppearance = appearance
+        navigationController?.navigationBar.prefersLargeTitles = false
+    }
     
 }
     
