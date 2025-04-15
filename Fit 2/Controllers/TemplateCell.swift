@@ -31,7 +31,9 @@ class TemplateCell: UICollectionViewCell {
         return [
             UIAction(title: "Edit Template", image: UIImage(systemName: "pencil.fill"), handler: { (_) in
                 let overlayer = CreateTemplateController()
-                overlayer.template = self.template!
+                let id = self.template?.objectID
+                let templateInContext = self.coreDataHelper.templateContext.object(with: id!) as! Template
+                overlayer.template = templateInContext
                 overlayer.folder = self.folder!
                 overlayer.appear(sender: self.homeController!)
             }),

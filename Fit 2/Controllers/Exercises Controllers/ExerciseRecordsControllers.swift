@@ -66,7 +66,7 @@ extension ExerciseRecordsControllers: UICollectionViewDelegate, UICollectionView
         let setHeight = 55 // Estimated height for set cell
         
         if (indexPath.row == 0) {
-            return CGSize(width: size, height: 200)
+            return CGSize(width: size, height: 150)
         } else if (indexPath.row == 1) {
             let numSets = exercise?.oneRepMaxPRs!.count ?? 0
             let tableViewHeight = numSets * setHeight

@@ -211,6 +211,7 @@ extension HomeController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        print("view will appear called")
         DispatchQueue.main.async {
             super.viewWillAppear(animated)
             if (self.k.currentWorkout != nil) {
@@ -222,6 +223,8 @@ extension HomeController {
             }
         }
     }
+    
+    
     
 }
     

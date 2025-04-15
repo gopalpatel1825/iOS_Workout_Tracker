@@ -15,9 +15,15 @@ class WorkoutEditorBottomCell: UICollectionViewCell {
     
     let coreDataHelper = CoreDataHelper.shared
 
+    @IBOutlet weak var calculatorsButton: UIButton!
+    
+    @IBOutlet weak var discardButton: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        calculatorsButton.layer.cornerRadius = 8
+        discardButton.layer.cornerRadius = 8
     }
 
     @IBAction func addExercisePressed(_ sender: UIButton) {

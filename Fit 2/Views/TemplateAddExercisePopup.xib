@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,6 +11,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddExercisePopup" customModule="Fit_2" customModuleProvider="target">
             <connections>
                 <outlet property="backView" destination="mwl-qP-mh4" id="dgm-0D-6Mj"/>
+                <outlet property="bodyPartButton" destination="s6C-gE-Jqz" id="ct6-hO-FJ1"/>
+                <outlet property="categoryButton" destination="CyS-HR-uG7" id="BgD-Yw-mSZ"/>
                 <outlet property="contentView" destination="cZi-5c-mL8" id="peW-K1-vDE"/>
                 <outlet property="searchBar" destination="kWb-JP-6h9" id="ltz-N7-XNn"/>
                 <outlet property="tableView" destination="67G-eJ-nnq" id="LNs-ks-3vX"/>

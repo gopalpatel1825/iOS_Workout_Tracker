@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="416" height="256"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bench Press" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PlQ-Ql-fMu" userLabel="titleLabel">
-                                <rect key="frame" x="0.0" y="11" width="416" height="21"/>
+                                <rect key="frame" x="0.0" y="11" width="99" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="xHb-ZF-RTl"/>
                                 </constraints>
@@ -94,13 +94,22 @@
                                     <action selector="addSetPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Lr4-Bw-qpw"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qe-Mf-ie9">
+                                <rect key="frame" x="368.33333333333331" y="0.0" width="47.666666666666686" height="34.333333333333336"/>
+                                <color key="tintColor" systemColor="tintColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="ellipsis" catalog="system"/>
+                                <connections>
+                                    <action selector="optionsButtonPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="7VC-AJ-lxE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="P2m-vN-0f9" secondAttribute="bottom" constant="40" id="7mu-ER-IWg"/>
                             <constraint firstItem="Yw3-bb-Bbt" firstAttribute="centerX" secondItem="hqH-ux-AGS" secondAttribute="centerX" id="8bY-sT-icA"/>
-                            <constraint firstAttribute="trailing" secondItem="PlQ-Ql-fMu" secondAttribute="trailing" id="AE4-KG-wVy"/>
                             <constraint firstAttribute="trailing" secondItem="nYo-zI-bqy" secondAttribute="trailing" id="DKI-2t-hfM"/>
+                            <constraint firstAttribute="trailing" secondItem="7qe-Mf-ie9" secondAttribute="trailing" id="EdP-U7-zCI"/>
                             <constraint firstItem="PlQ-Ql-fMu" firstAttribute="top" secondItem="hqH-ux-AGS" secondAttribute="top" constant="11" id="Kx5-5c-j1T"/>
                             <constraint firstItem="P2m-vN-0f9" firstAttribute="top" secondItem="nYo-zI-bqy" secondAttribute="bottom" id="ZKh-3f-LOO"/>
                             <constraint firstItem="nYo-zI-bqy" firstAttribute="top" secondItem="PlQ-Ql-fMu" secondAttribute="bottom" id="cOv-Mz-pbx"/>
@@ -111,6 +120,7 @@
                             <constraint firstAttribute="trailing" secondItem="Yw3-bb-Bbt" secondAttribute="trailing" id="v3t-kh-tKH"/>
                             <constraint firstItem="P2m-vN-0f9" firstAttribute="leading" secondItem="hqH-ux-AGS" secondAttribute="leading" id="wKw-7J-VFO"/>
                             <constraint firstAttribute="trailing" secondItem="P2m-vN-0f9" secondAttribute="trailing" id="wv7-c9-ZRT"/>
+                            <constraint firstItem="7qe-Mf-ie9" firstAttribute="top" secondItem="hqH-ux-AGS" secondAttribute="top" id="zPd-ql-IP4"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -126,6 +136,7 @@
             <connections>
                 <outlet property="addSet" destination="Yw3-bb-Bbt" id="mxH-bY-eoR"/>
                 <outlet property="nameLabel" destination="PlQ-Ql-fMu" id="sK8-c7-2Db"/>
+                <outlet property="optionsButton" destination="7qe-Mf-ie9" id="Cjb-0j-Cix"/>
                 <outlet property="tableView" destination="P2m-vN-0f9" id="ksl-pf-yC6"/>
             </connections>
             <point key="canvasLocation" x="543.51145038167942" y="-373.94366197183098"/>
@@ -133,11 +144,15 @@
     </objects>
     <resources>
         <image name="checkmark" catalog="system" width="128" height="114"/>
+        <image name="ellipsis" catalog="system" width="128" height="37"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

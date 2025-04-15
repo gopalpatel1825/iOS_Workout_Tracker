@@ -10,7 +10,8 @@ import CoreData
 
 class WorkoutExerciseCell: UICollectionViewCell, UITableViewDelegate, UITableViewDataSource {
     
-
+    @IBOutlet weak var optionsButton: UIButton!
+    
     @IBOutlet weak var nameLabel: UILabel!
     
     @IBOutlet weak var tableView: UITableView!
@@ -21,12 +22,43 @@ class WorkoutExerciseCell: UICollectionViewCell, UITableViewDelegate, UITableVie
     
     var exercise: WorkoutExercise? { didSet { configure()} }
 
-    
     var sets: [Set] = []
     
     var lastSets: [Set] = []
     
     var previousSets = false
+    
+    var workout: Workout?
+    
+    var workoutController: WorkoutController?
+    
+    var menuItems: [UIAction] {
+        return [
+            UIAction(title: "Remove Exercise", image: UIImage(systemName: "trash"), attributes: .destructive, handler: { (_) in
+                self.workout?.removeFromExercises(self.exercise!)
+                self.workoutController?.loadExercises()
+            }),
+            
+            UIAction(title: "Add Rest Timer", image: UIImage(systemName: "pencil.fill"), handler: { (_) in
+                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RestTimerPickerView") as! RestTimerPickerView
+                vc.exercise = self.exercise?.exercise
+                if let sheetController = vc.sheetPresentationController {
+                    let fraction = UISheetPresentationController.Detent.custom { context in
+                        // height is the view.frame.height of the view controller which presents this bottom sheet
+                        200
+                    }
+                    sheetController.detents = [fraction]
+                    sheetController.prefersGrabberVisible = true
+                    self.workoutController?.present(vc, animated: true)
+                }
+                
+            })
+        ]
+    }
+
+    var demoMenu: UIMenu {
+        return UIMenu(children: menuItems)
+    }
     
     
     
@@ -57,6 +89,10 @@ class WorkoutExerciseCell: UICollectionViewCell, UITableViewDelegate, UITableVie
             (self.superview as? UICollectionView)?.collectionViewLayout.invalidateLayout()
         }
         
+    }
+    
+    
+    @IBAction func optionsButtonPressed(_ sender: UIButton) {
     }
     
     
@@ -161,6 +197,8 @@ class WorkoutExerciseCell: UICollectionViewCell, UITableViewDelegate, UITableVie
         nameLabel.text = exercise!.exercise!.name
         fetchSets()
         fetchLastSets()
+        optionsButton.menu = demoMenu
+        optionsButton.showsMenuAsPrimaryAction = true
         
     }
     

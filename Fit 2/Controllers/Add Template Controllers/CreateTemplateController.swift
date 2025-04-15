@@ -23,7 +23,6 @@ class CreateTemplateController: UIViewController {
     
     let coreDataHelper = CoreDataHelper.shared
     
-    @IBOutlet weak var textField: UITextField!
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -45,9 +44,11 @@ class CreateTemplateController: UIViewController {
         // Set the delegates
         collectionView.delegate = self
         collectionView.dataSource = self
-        textField.delegate = self
         
         collectionView.register(UINib(nibName: "EditTemplateExerciseCell", bundle: nil), forCellWithReuseIdentifier: "EditTemplateExerciseCell")
+        collectionView.register(UINib(nibName: "TemplateEditorBottomCell", bundle: nil), forCellWithReuseIdentifier: "TemplateEditorBottomCell")
+        collectionView.register(UINib(nibName: "TemplateEditorHeaderCell", bundle: nil), forCellWithReuseIdentifier: "TemplateEditorHeaderCell")
+        
         
         // Make the notification center to listen for new base exercises being saved
         let notificationCenter = NotificationCenter.default
@@ -55,7 +56,6 @@ class CreateTemplateController: UIViewController {
         
         loadExercises()
         
-        manageSaveButton()
         
         print("Self.folder.name \(self.folder!.name)")
     }
@@ -63,7 +63,6 @@ class CreateTemplateController: UIViewController {
     
     @IBAction func savePressed(_ sender: UIButton) {
         collectionView.reloadData()
-        template?.name = textField.text
         print("\(template?.name ?? "nil")")
         
         folder!.addToTemplates(self.template!)
@@ -120,28 +119,6 @@ class CreateTemplateController: UIViewController {
     
 }
 
-extension CreateTemplateController: UITextFieldDelegate {
-
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        manageSaveButton()
-    }
-    
-    func manageSaveButton() {
-        if textField.text == "" {
-            textField.placeholder = "Enter a Template Name"
-            saveButton.isEnabled = false
-        } else {
-            self.template?.name = textField.text
-            saveButton.isEnabled = true
-        }
-    }
-    
-    func textFieldDidChangeSelection(_ textField: UITextField) {
-        manageSaveButton()
-    }
-    
-}
-
 // MARK - Popup
 
 extension CreateTemplateController {
@@ -174,15 +151,33 @@ extension CreateTemplateController {
 extension CreateTemplateController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return (exercises.count)
+        return exercises.count + 2
     }
     
     // Each cell gets its a single exercise
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "EditTemplateExerciseCell", for: indexPath) as! EditTemplateExerciseCell
-        cell.exercise = self.exercises[indexPath.row]
-        cell.configure()
-        return cell
+        if (indexPath.row == 0) {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TemplateEditorHeaderCell", for: indexPath) as! TemplateEditorHeaderCell
+            
+            cell.template = self.template
+            cell.templateEditor = self
+            
+            return cell
+            
+        } else if (indexPath.row == exercises.count + 1) {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TemplateEditorBottomCell", for: indexPath) as! TemplateEditorBottomCell
+            
+            cell.template = self.template
+            cell.templateEditor = self
+            
+            return cell
+            
+        } else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "EditTemplateExerciseCell", for: indexPath) as! EditTemplateExerciseCell
+            cell.exercise = self.exercises[indexPath.row - 1]
+            cell.configure()
+            return cell
+        }
     }
 }
 
@@ -194,16 +189,17 @@ extension CreateTemplateController: UICollectionViewDelegateFlowLayout {
         let space: CGFloat = (flowayout?.minimumInteritemSpacing ?? 0.0) + (flowayout?.sectionInset.left ?? 0.0) + (flowayout?.sectionInset.right ?? 0.0)
         let size:CGFloat = (collectionView.frame.size.width - space)
         
-        let cellWidth = collectionView.frame.width - space
-        
-        // Get the actual cell
-        if let cell = collectionView.cellForItem(at: indexPath) as? EditTemplateExerciseCell {
-            cell.layoutIfNeeded()
-            let tableViewHeight = cell.tableView.contentSize.height
-            return CGSize(width: cellWidth, height: tableViewHeight + 105) // Adjust padding as needed
+        if (indexPath.row == 0) {
+            return CGSize(width: size, height: 100)
+        } else if (indexPath.row == exercises.count + 1) {
+            return CGSize(width: size, height: 400)
+        } else {
+            let exercise = exercises[indexPath.row - 1]
+            let estimatedSetHeight: CGFloat = 44 // Adjust based on average set height
+            let totalTableHeight = CGFloat(exercise.sets?.count ?? 0) * estimatedSetHeight
+            
+            return CGSize(width: size, height: totalTableHeight + 110)
         }
-        
-        return CGSize(width: size, height: size)
     }
 
 }
@@ -215,7 +211,6 @@ extension CreateTemplateController {
      // Configures the label and the collectionView
     @objc func loadExercises() {
         self.exercises = self.template?.exercises?.array as! [WorkoutExercise]
-        self.textField.text = self.template?.name
         collectionView.reloadData()
     }
     

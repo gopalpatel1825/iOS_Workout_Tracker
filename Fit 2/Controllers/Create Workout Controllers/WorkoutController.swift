@@ -18,13 +18,13 @@ class WorkoutController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    @IBOutlet weak var addExerciseButton: UIButton!
-    
     @IBOutlet weak var stopWatchLabel: UILabel!
     
     let coreDataHelper = CoreDataHelper.shared
     
     let k = Constants.shared
+    
+    let restManager = RestTimerManager.shared
     
     var workout: Workout?
     
@@ -37,7 +37,8 @@ class WorkoutController: UIViewController {
         super.viewDidLoad()
         
         
-    
+        timerButton.layer.cornerRadius = 5
+        
         collectionView.delegate = self
         collectionView.dataSource = self
         
@@ -58,6 +59,13 @@ class WorkoutController: UIViewController {
     
     
     @IBAction func timerPressed(_ sender: UIButton) {
+        let mainStoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let destination = mainStoryboard.instantiateViewController(withIdentifier: "RestTimerController") as! RestTimerController
+        
+        destination.modalPresentationStyle = .pageSheet
+        
+        self.present(destination, animated: true, completion: nil)
+       
     }
     
     
@@ -101,6 +109,7 @@ class WorkoutController: UIViewController {
         self.workout?.numSets = Int64(numSets)
         print("Total volume for workout: \(volume)")
         stopStopwatch()
+        restManager.reset()
         calculateDateAndDuration()
         
         coreDataHelper.saveGivenContext(context: context)
@@ -158,7 +167,8 @@ extension WorkoutController: UICollectionViewDelegate, UICollectionViewDataSourc
             
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "WorkoutExerciseCell", for: indexPath) as! WorkoutExerciseCell
             cell.exercise = self.exercises[indexPath.row - 1]
-            //cell.configure()
+            cell.workout = self.workout!
+            cell.workoutController = self
             
             return cell
         }
@@ -188,41 +198,31 @@ extension WorkoutController: UICollectionViewDelegate, UICollectionViewDataSourc
 extension WorkoutController {
     
     func startStopWatch() {
-        // Start timer that updates every second
-        if (k.timer == nil) {
-            k.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateStopwatch), userInfo: nil, repeats: true)
+            let manager = WorkoutTimerManager.shared
+            
+            stopWatchLabel.text = manager.formattedTime()
+            
+            manager.onTick = { [weak self] _ in
+                self?.stopWatchLabel.text = manager.formattedTime()
+            }
+            
+            manager.start()
         }
-    }
-        
-    @objc func updateStopwatch() {
-        k.elapsedTime += 1
-        
-        let hours = Int(k.elapsedTime) / 3600
-        let minutes = (Int(k.elapsedTime) % 3600) / 60
-        let seconds = Int(k.elapsedTime) % 60
-        
-        if hours > 0 {
-            stopWatchLabel.text = String(format: "%02d:%02d:%02d", hours, minutes, seconds) // HH:MM:SS
-        } else {
-            stopWatchLabel.text = String(format: "%02d:%02d", minutes, seconds) // MM:SS
+
+        func stopStopwatch() {
+            WorkoutTimerManager.shared.stop()
         }
-    }
-        
-    func stopStopwatch() {
-        k.timer?.invalidate()
-        k.timer = nil
-    }
-    
-    func calculateDateAndDuration() {
-        
-        let duration = k.elapsedTime/60 // Duration in minutes
-        let date = Date()
-        
-        self.workout?.duration = Int64(duration)
-        self.workout?.endDate = date
-        
-        print("Workout duration: \(duration) minutes, date: \(date)")
-    }
+
+        func calculateDateAndDuration() {
+            let manager = WorkoutTimerManager.shared
+            let duration = manager.elapsedTime / 60 // minutes
+            let date = Date()
+            
+            self.workout?.duration = Int64(duration)
+            self.workout?.endDate = date
+            
+            print("Workout duration: \(duration) minutes, date: \(date)")
+        }
 }
 
 extension WorkoutController: AddExercisePopupDelegate {

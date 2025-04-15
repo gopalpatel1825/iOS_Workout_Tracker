@@ -13,15 +13,9 @@ class ExercisesController: UIViewController {
     
     var exercises: [Exercise] = []
     
-    var fetchRequest: NSFetchRequest<Exercise> {
-        return NSFetchRequest<Exercise>(entityName: "Exercise")
-    }
+    var currentCategory: String? = nil { didSet { print("Did set current category"); manageFetchRequest() } }
     
-    var currentCategory: String? = nil { didSet { manageFetchRequest() } }
-    
-    var currentBodyPart: String? = nil { didSet { manageFetchRequest() } }
-    
-    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    var currentBodyPart: String? = nil { didSet { print("Did set current body part"); manageFetchRequest() } }
     
     let coreDataHelper = CoreDataHelper.shared
     
@@ -47,7 +41,7 @@ class ExercisesController: UIViewController {
     @IBOutlet weak var tableViewBottomConstraint: NSLayoutConstraint!
     
     var bodyPartMenu: UIMenu {
-        return UIMenu(children: categoryItems)
+        return UIMenu(children: bodyPartItems)
     }
     
     var bodyPartItems: [UIAction] {
@@ -142,24 +136,23 @@ class ExercisesController: UIViewController {
         
         tableView.register(UINib(nibName: "ExerciseCell", bundle: nil), forCellReuseIdentifier: "ExerciseCell")
         
-        let sortDescriptor = NSSortDescriptor(key: "name", ascending: true)
-        fetchRequest.sortDescriptors?.append(sortDescriptor)
-        
         DispatchQueue.main.async {
-            
             self.hideWorkoutBar()
-            
         }
         
         let notificationCenter = NotificationCenter.default
         notificationCenter.addObserver(self, selector: #selector(self.fetchExercises), name: NSNotification.Name("ExerciseSaved"), object: nil)
         
         fetchExercises()
+        manageFetchRequest()
         
         categoryButton.menu = categoryMenu
         categoryButton.showsMenuAsPrimaryAction = true
         bodyPartButton.menu = bodyPartMenu
         bodyPartButton.showsMenuAsPrimaryAction = true
+        
+        categoryButton.layer.cornerRadius = 10
+        bodyPartButton.layer.cornerRadius = 10
         
     }
     
@@ -200,49 +193,43 @@ class ExercisesController: UIViewController {
     }
     
     @objc func fetchExercises() {
+        currentCategory = nil
+        currentBodyPart = nil
         
-        do {
-            self.exercises = try coreDataHelper.baseExerciseContext.fetch(fetchRequest)
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-            }
-        } catch {
-            
-        }
+        manageFetchRequest()
     }
     
-    func manageFetchRequest() {
-        
-        if (currentCategory == nil && currentBodyPart == nil) {
-            fetchExercises()
-        } else if (currentCategory != nil && currentBodyPart != nil) {
-            let predicate1 = NSPredicate(format: "category == %@", currentCategory!)
-            let predicate2 = NSPredicate(format: "bodyPart == %@", currentBodyPart!)
-            let compoundPredicate = NSCompoundPredicate(andPredicateWithSubpredicates: [predicate1, predicate2])
-            fetchRequest.predicate = compoundPredicate
-            fetchExercises()
-        } else if (currentCategory != nil) {
-            let predicate = NSPredicate(format: "category == %@", currentCategory!)
-            fetchRequest.predicate = predicate
-            fetchExercises()
-        } else {
-            let predicate = NSPredicate(format: "bodyPart == %@", currentBodyPart!)
-            fetchRequest.predicate = predicate
-            fetchExercises()
-        }
-        
-        if currentCategory != nil {
-            categoryButton.titleLabel?.text = currentCategory
-        } else {
-            categoryButton.titleLabel?.text = "All Categories"
-        }
-        
-        if currentBodyPart != nil {
-            bodyPartButton.titleLabel?.text = currentBodyPart
-        } else {
-            bodyPartButton.titleLabel?.text = "All Body Parts"
-        }
     
+    func manageFetchRequest() {
+        let request = NSFetchRequest<Exercise>(entityName: "Exercise") // new clean request
+        let sortDescriptor = NSSortDescriptor(key: "name", ascending: true)
+        request.sortDescriptors = [sortDescriptor]
+        
+        var predicates: [NSPredicate] = []
+        
+        // Filter only if category is not nil or not "All"
+        if let category = currentCategory, category != "All Categories" {
+            predicates.append(NSPredicate(format: "category == %@", category))
+        }
+        
+        if let bodyPart = currentBodyPart, bodyPart != "All Body Parts" {
+            predicates.append(NSPredicate(format: "bodyPart == %@", bodyPart))
+        }
+        
+        if !predicates.isEmpty {
+            request.predicate = NSCompoundPredicate(andPredicateWithSubpredicates: predicates)
+        }
+        
+        do {
+            self.exercises = try coreDataHelper.baseExerciseContext.fetch(request)
+            self.tableView.reloadData()
+        } catch {
+            print("Failed to fetch filtered exercises: \(error)")
+        }
+        
+        // Update button titles
+        categoryButton.setTitle(currentCategory ?? "All Categories", for: .normal)
+        bodyPartButton.setTitle(currentBodyPart ?? "All Body Parts", for: .normal)
     }
     
     
@@ -349,7 +336,5 @@ extension ExercisesController {
                 self.tableView.frame.size.height = self.tableView.frame.height + 60
             }
         }
-        
     }
-    
 }

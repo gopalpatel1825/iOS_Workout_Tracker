@@ -5,6 +5,7 @@
         <attribute name="category" optional="YES" attributeType="String"/>
         <attribute name="mediaFileName" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="restTimer" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="summary" optional="YES" attributeType="String" defaultValueString="No description for this exercise yet"/>
         <relationship name="maxVolumePRs" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Set" inverseName="volumePRExercise" inverseEntity="Set"/>
         <relationship name="maxWeightPRs" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Set" inverseName="maxWeightPRExercise" inverseEntity="Set"/>

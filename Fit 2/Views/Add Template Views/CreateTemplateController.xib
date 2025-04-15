@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,7 +12,6 @@
             <connections>
                 <outlet property="collectionView" destination="Lme-Kr-r50" id="5Se-jO-aCJ"/>
                 <outlet property="saveButton" destination="QHu-QZ-DuQ" id="ad9-QW-Jup"/>
-                <outlet property="textField" destination="v96-aE-fdQ" id="yU9-ix-M1d"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,18 +20,11 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create a Template" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bkd-nK-i6Q">
-                    <rect key="frame" x="113.66666666666669" y="59" width="166" height="26"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="166" id="QmH-Nc-W2v"/>
-                        <constraint firstAttribute="height" constant="26" id="bmI-Py-iK0"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yqp-Ip-Mqh">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yqp-Ip-Mqh">
                     <rect key="frame" x="31" y="55" width="35" height="35"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="o1q-BH-SFT"/>
+                    </constraints>
                     <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="gray" image="xmark" catalog="system"/>
@@ -40,18 +32,17 @@
                         <action selector="cancelPressed:" destination="-1" eventType="touchUpInside" id="7w7-AO-NUG"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHu-QZ-DuQ">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHu-QZ-DuQ">
                     <rect key="frame" x="309" y="55" width="61" height="35"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="filled" title="Save"/>
                     <connections>
                         <action selector="savePressed:" destination="-1" eventType="touchUpInside" id="zBb-jk-PhK"/>
                     </connections>
                 </button>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Lme-Kr-r50">
-                    <rect key="frame" x="0.0" y="161" width="393" height="605"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Lme-Kr-r50">
+                    <rect key="frame" x="0.0" y="98" width="393" height="754"/>
+                    <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                     <color key="tintColor" red="0.08177763968706131" green="0.23631632328033447" blue="0.36355486512184143" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="N6a-82-Qfg">
                         <size key="itemSize" width="128" height="128"/>
@@ -60,38 +51,18 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9J9-Ix-o9p">
-                    <rect key="frame" x="15" y="774" width="363" height="35"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="tinted" title="Add Exercise"/>
-                    <connections>
-                        <action selector="addExercisePressed:" destination="-1" eventType="touchUpInside" id="fRV-bg-jcn"/>
-                    </connections>
-                </button>
-                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Template Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v96-aE-fdQ">
-                    <rect key="frame" x="15" y="117" width="363" height="34"/>
-                    <color key="backgroundColor" systemColor="systemFillColor"/>
-                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9J9-Ix-o9p" secondAttribute="trailing" constant="15" id="5Gh-6d-5UF"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="9J9-Ix-o9p" secondAttribute="bottom" constant="9" id="8RC-rZ-f20"/>
-                <constraint firstItem="9J9-Ix-o9p" firstAttribute="top" secondItem="Lme-Kr-r50" secondAttribute="bottom" constant="8" id="HXv-FB-eaD"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="v96-aE-fdQ" secondAttribute="trailing" constant="15" id="Lbi-Ay-rkG"/>
-                <constraint firstItem="v96-aE-fdQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="LgZ-nT-c1H"/>
+                <constraint firstAttribute="trailing" secondItem="QHu-QZ-DuQ" secondAttribute="trailing" constant="23" id="2Qo-k6-6F6"/>
+                <constraint firstAttribute="bottom" secondItem="Lme-Kr-r50" secondAttribute="bottom" id="P8Q-Vr-xpn"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Lme-Kr-r50" secondAttribute="trailing" id="VMK-zj-CPT"/>
-                <constraint firstItem="Bkd-nK-i6Q" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Y21-xD-NN9"/>
-                <constraint firstItem="v96-aE-fdQ" firstAttribute="top" secondItem="Bkd-nK-i6Q" secondAttribute="bottom" constant="32" id="a1G-0m-IRp"/>
-                <constraint firstItem="Lme-Kr-r50" firstAttribute="top" secondItem="v96-aE-fdQ" secondAttribute="bottom" constant="10" id="clR-8R-Q2x"/>
+                <constraint firstItem="Lme-Kr-r50" firstAttribute="top" secondItem="QHu-QZ-DuQ" secondAttribute="bottom" constant="8" id="Xef-4I-tle"/>
+                <constraint firstItem="QHu-QZ-DuQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="55" id="fLi-AU-55F"/>
+                <constraint firstItem="Yqp-Ip-Mqh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="31" id="qsC-kt-YZm"/>
+                <constraint firstItem="QHu-QZ-DuQ" firstAttribute="top" secondItem="Yqp-Ip-Mqh" secondAttribute="top" id="r4h-eB-Euw"/>
                 <constraint firstItem="Lme-Kr-r50" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="s9Z-gE-ZXk"/>
-                <constraint firstItem="Bkd-nK-i6Q" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="upZ-9M-cDG"/>
-                <constraint firstItem="v96-aE-fdQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wCS-Hw-4Ss"/>
-                <constraint firstItem="9J9-Ix-o9p" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="wgo-Yr-cav"/>
-                <constraint firstItem="9J9-Ix-o9p" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xt8-xL-DmJ"/>
             </constraints>
             <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
         </view>
@@ -100,9 +71,6 @@
         <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemFillColor">
-            <color red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
